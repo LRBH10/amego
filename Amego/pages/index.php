@@ -1,3 +1,7 @@
+<?php
+include_once '../config/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +15,7 @@
         <title>AMEGO DEMENAGEMENT</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -23,44 +27,18 @@
         <![endif]-->
 
         <!-- Custom styles for this template -->
-        <link href="dist/css/carousel.css" rel="stylesheet">
+        <link href="<?php echo RESOURCESITE; ?>css/carousel.css" rel="stylesheet">
     </head>
-    <!-- NAVBAR
-    ================================================== -->
-    <body>
-        <div class="navbar-wrapper">
-            <div class="container">
 
-                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">AMEGO</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li><a href="service.html">Nos services</a></li>
-                                <li><a href="devi.html">Devis déménagement</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+    <body role="document">
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+        <?php
+        include INCLUDESITE . '/menu/header.php';
+        ?>
 
         <!-- Carousel
         ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <section id="myCarousel" class="container carousel slide" data-ride="carousel" role="main">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -71,7 +49,7 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <!--data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide"-->
-                    <img src="images/demenageur.jpg"  alt="First slide">
+                    <img src="<?php echo IMAGESITE; ?>demenageur.jpg"  alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Premiere Image.</h1>
@@ -81,7 +59,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/no-one.jpg" alt="Second slide">
+                    <img src="<?php echo IMAGESITE; ?>no-one.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Dexieme Image.</h1>
@@ -91,7 +69,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/experience.jpg" alt="Third slide">
+                    <img src="<?php echo IMAGESITE; ?>experience.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Toisieme Image.</h1>
@@ -100,11 +78,12 @@
                     </div>
                 </div>
 
-                
+
             </div>
             <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div><!-- /.carousel -->
+
+        </section>
 
 
 
@@ -117,50 +96,47 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="img-circle" src="images/cerveau.jpg" alt="Generic placeholder image">
+                    <img class="img-circle" src="<?php echo ROOTSITE; ?>images/cerveau.jpg" alt="Generic placeholder image">
                     <h2>Expérience</h2>
                     <p>Quelque Chose de Spécial ( Témoinge, partenaire, Conseil ... ) </p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-circle" src="images/no-1.jpg" alt="Generic placeholder image">
+                    <img class="img-circle" src="<?php echo ROOTSITE; ?>images/no-1.jpg" alt="Generic placeholder image">
                     <h2>Fiabilité</h2>
                     <p>Quelque Chose de Spécial</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="img-circle" src="images/h1.jpg" alt="Generic placeholder image">
+                    <img class="img-circle" src="<?php echo ROOTSITE; ?>images/h1.jpg" alt="Generic placeholder image">
                     <h2>Savoir-faire</h2>
                     <p>Quelque Chose de Spécial</p>
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
-                
+            </div><!-- /.row -->
 
-                        
-        <div class="row">
-                  
 
-                        <div class="col-md-3 col-md-offset-2">
-                            <center><img class="img-circle" src="images/conseil.png" alt="Generic placeholder image">
-                            <center><h2>Conseils</h2>
-                            <center><p>Quelque Chose de Spécial</p>
-                            <center><p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!-- /.col-lg-4 -->
-                        <div class="col-md-3 col-md-offset-1">
-                            <center><img class="img-circle" src="images/moving4.jpg" alt="Generic placeholder image">
-                            <center><h2>Qualité de service</h2>
-                            <center><p>Quelque Chose de Spécial</p>
-                            <center><p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div><!-- /.col-lg-4 -->
-                
+
+            <div class="row">
+
+
+                <div class="col-md-3 col-md-offset-2">
+                    <center>
+                        <img class="img-circle" src="<?php echo ROOTSITE; ?>images/conseil.png" alt="Generic placeholder image">
+                    </center>
+                    <h2>Conseils</h2>
+                    <center>
+                        <p>Quelque Chose de Spécial</p>
+                    </center>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                        
-
-                
-                
-            
-
+                <div class="col-md-3 col-md-offset-1">
+                    <center><img class="img-circle" src="<?php echo ROOTSITE; ?>images/moving4.jpg" alt="Generic placeholder image">
+                    </center><h2>Qualité de service</h2>
+                    <center><p>Quelque Chose de Spécial</p>
+                    </center><p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
 
             <!-- START THE FEATURETTES -->
 
@@ -199,16 +175,14 @@
                 </div>
             </div>
 
-            <hr class="featurette-divider">
 
-            <!-- /END THE FEATURETTES -->
+
 
 
             <!-- FOOTER -->
-            <footer>
-                <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2014 AMEGO, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
+            <?php
+            include INCLUDESITE . '/menu/footer.php';
+            ?>
 
         </div><!-- /.container -->
 
@@ -217,7 +191,7 @@
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="dist/js/bootstrap.min.js"></script>
-        <script src="bootstrap-3.0.3/docs-assets/js/holder.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
     </body>
 </html>
