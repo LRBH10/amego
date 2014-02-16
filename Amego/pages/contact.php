@@ -12,17 +12,14 @@ include_once '../config/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
         <title>Contact</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
-        <link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link href="http://getbootstrap.com/examples/theme/theme.css" rel="stylesheet">
+        <link href="<?php echo RESOURCESITE; ?>css/bootstrap-theme.min.css" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -115,9 +112,9 @@ include_once '../config/config.php';
             <!-- Bootstrap core JavaScript
             ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
-            <script src="./Theme Template for Bootstrap_files/jquery-1.10.2.min.js"></script>
-            <script src="./Theme Template for Bootstrap_files/bootstrap.min.js"></script>
-            <script src="./Theme Template for Bootstrap_files/docs.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
 
 
     </body></html>

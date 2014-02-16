@@ -10,7 +10,7 @@ include_once '../config/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="bootstrap-3.0.3/docs-assets/ico/favicon.png">
+        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
         <title>AMEGO DEMENAGEMENT</title>
 

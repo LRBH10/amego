@@ -11,7 +11,7 @@ include_once '../config/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
         <title>Contact</title>
 
