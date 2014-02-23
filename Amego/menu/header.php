@@ -24,7 +24,7 @@
             </ul>
             <ul class="nav navbar-nav pull-right">
                 <li><a href="<?php echo ROOTSITE; ?>devis.php">Devis déménagement</a></li>
-                <li><a href="<?php echo ROOTSITE; ?>contact.php">Contact</a></li>
+                <li><a href="<?php echo ROOTSITE; ?>contact.php">Nous Contactez</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

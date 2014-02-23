@@ -1,117 +1,116 @@
-
 <?php
-include_once 'config/config.php';
+include_once './config/config.php';
+include_once './menu/navigation.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
-        <title>Contact</title>
+        <title>Contact - Modern Business - Start Bootstrap Template</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="dist/css/bootstrap.css" rel="stylesheet">
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- Add custom CSS here -->
+        <link href="dist/css/amego.css" rel="stylesheet">
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
+        <style type="text/css"></style></head>
 
-    <body role="document" style="">
-
+    <body style="">
+        
         <?php
-        include INCLUDESITE . '/menu/header.php';
+        include './menu/header.php';
+        navigation('contact');
         ?>
+        <!-- Page Content -->
+        
+        
 
-        <div class="container theme-showcase" role="main">
+        <div class="container">
 
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <h1>Contact</h1>
-                <p>Pour contacter les services déménagements AMEGO, appelez par téléphone le <kbd>01 42 26 52 20</kbd>ou 
-                    utiliser le formulaire ci-dessous. Nous vous répondrons dans les meilleurs délais.</p>
-            </div>
+            <div class="row">
 
-            <div class="container">
-
-                <form class="form-horizontal" role="form">
-
-                    <h1><span class="label label-default">Contactez-nous</span></h1>
-                    <br/>
-                    <div class="form-group">
-                        <span for="inputNom" class="col-sm-2 label label-success">Votre nom</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputNom">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputEmail" class="col-sm-2 label label-info">Adresse e-mail</span>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail">
-                        </div>
-                    </div>            
-                    <div class="form-group">
-                        <span for="inputNumero" class="col-sm-2 label label-warning">Numéro de téléphone</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputNumero">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputMesage" class="col-sm-2 label label-success">Précision</span>
-                        <div class="col-sm-10">
-                            <textarea id="inputMesage" class="form-control" rows="9" placeholder="Ecrivez votre message ici......"></textarea>
-                        </div>
-                    </div>            
-
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </div>
-                    </div>
-                </form>
-
-
-
-
-                <div class="page-header">
+                <div class="col-lg-12">
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=paris&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=60.116586,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Paris,+%C3%8Ele-de-France,+France&amp;t=m&amp;ll=48.860085,2.353134&amp;spn=0.039528,0.072956&amp;z=13&amp;output=embed"></iframe>
                 </div>
 
+            </div>
+        
+            <hr class="featurette-divider">
 
-                <hr class="featurette-divider">
+            <div class="row">
 
-                <!-- /END THE FEATURETTES -->
+                <div class="col-sm-8">
+                    <h3>Soyons en contact!</h3>
+                    <form role="form" method="POST" action="contact-form-submission.php">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label for="input1">Votre Nom</label>
+                                <input type="text" name="contact_name" class="form-control" id="input1">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="input2">Votre email</label>
+                                <input type="email" name="contact_email" class="form-control" id="input2">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="input3">Votre numero de téléphone</label>
+                                <input type="phone" name="contact_phone" class="form-control" id="input3">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                <label for="input4">Votre Message</label>
+                                <textarea name="contact_message" class="form-control" rows="6" id="input4"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="hidden" name="save" value="contact">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
+                <address class="col-sm-4">
+                    <h3>AMEGO Déménagement</h3>
+                    <p>
+                        Rue ..... <br>
+                        Paris, 00000<br>
+                    </p>
+                    <p><span class="glyphicon glyphicon-phone-alt"></span> <abbr title="Phone">P</abbr>: +33 (0)1 42 26 52 20</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">contact@amego.fr</a></p>
+                    <p><span class="glyphicon glyphicon-time"></span> <abbr title="Hours">H</abbr>: Lundi - Vendredi: 8:00  à 19:00 </p>
+                    <!--ul class="list-unstyled list-inline list-social-icons">
+                        <li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        <li class="tooltip-social linkedin-link"><a href="#linkedin-company-page" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                        <li class="tooltip-social google-plus-link"><a href="#google-plus-page" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                    </ul-->
+                </address>
 
-                <!-- FOOTER -->
-                <footer>
-                    <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2014 AMEGO, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-                </footer>
+            </div><!-- /.row -->
 
-            </div> <!-- /container -->
+        </div><!-- /.container -->
 
+        <div class="container">
 
-            <!-- Bootstrap core JavaScript
-            ================================================== -->
-            <!-- Placed at the end of the document so the pages load faster -->
+            <hr>
+
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright © Company 2013</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div><!-- /.container -->
+
+        <!-- JavaScript -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
-
-
-    </body></html>
+        <script src="dist/js/bootstrap.js"></script>
+        <script src="dist/js/amego.js"></script>
+    </body>
+</html>

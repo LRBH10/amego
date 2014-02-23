@@ -4115,6 +4115,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
+  max-height: 40px;
 }
 .breadcrumb > li {
   display: inline-block;

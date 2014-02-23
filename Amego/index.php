@@ -1,5 +1,6 @@
 <?php
 include_once 'config/config.php';
+include_once './menu/navigation.php';
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,6 @@ include_once 'config/config.php';
         <?php
         include INCLUDESITE . '/menu/header.php';
         ?>
-
 
         <section id="myCarousel" class="container carousel slide" data-ride="carousel" role="main">
             <!-- Indicators -->
