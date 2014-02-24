@@ -16,7 +16,7 @@ function navigation($param) {
                         <h1 class="page-header">Contact <small>Nous aimerions avoir de vos nouvelles!</small></h1>
 
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.php">Acceuil</a></li>
                             <li class="active">Contact</li>
                         </ol>
                     </div>

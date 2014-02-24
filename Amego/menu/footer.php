@@ -7,9 +7,9 @@
 ?>
 
 
-<hr class="featurette-divider">
-<footer>
 
+<footer  class="container">
+<hr class="featurette-divider">
     <div class="well">
         <p>Pour votre information les demenageurs AMEGO situés à Paris (75) interviennent essentiellemement dans les département limitrophes; Yvelines (78), hauts de seine (92), seine st denis (93), val de marne (94), seine et marne (77), essonne (91).</p>
     </div>

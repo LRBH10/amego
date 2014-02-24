@@ -26,51 +26,45 @@ include_once './menu/navigation.php';
         include INCLUDESITE . '/menu/header.php';
         ?>
 
-        <section id="myCarousel" class="container carousel slide" data-ride="carousel" role="main">
+        <div id="myCarousel" class="carousel slide">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
+
+            <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="<?php echo IMAGESITE; ?>demenageur.jpg"  alt="First slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Premiere Image.</h1>
-                            <p>Explication sur l'image</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Plus d'information</a></p>
-                        </div>
+                    <div class="fill" style="background-image:url('images/demenageur.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h1>Modern Business - A Bootstrap 3 Template</h1>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="<?php echo IMAGESITE; ?>no-one.jpg" alt="Second slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Dexieme Image.</h1>
-                            <p>Explication sur l'image</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Plus d'information</a></p>
-                        </div>
+                    <div class="fill" style="background-image:url('images/experience.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h1>Ready to Style &amp; Add Content</h1>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="<?php echo IMAGESITE; ?>experience.jpg" alt="Third slide">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Toisieme Image.</h1>
-                            <p>Explication sur l'image</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Plus d'information</a></p>            </div>
+                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                    <div class="carousel-caption">
+                        <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
+                        </h1>
                     </div>
                 </div>
-
-
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-        </section>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
 
 
 
@@ -89,8 +83,8 @@ include_once './menu/navigation.php';
             <hr class="featurette-divider">
 
         </section>
-        
-        
+
+
         <section>
             <!-- Three columns of text below the carousel -->
             <div class="row">

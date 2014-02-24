@@ -58,82 +58,110 @@ include_once 'config/config.php';
                     <div class="panel-heading"><h1><span class="label label-default">Notre service demenagement pour les particuliers</span></h1></div>
 
                     <!-- Table -->
+
                     <table class="table table-striped">
                         <tr>
                             <th><span class="label label-warning">Liste des prestations</span></th>
-                            <th><span class="label label-success">Formule ECO</span></th> 
-                            <th><span class="label label-info">Formule STANDART</span></th>
-                            <th><span class="label label-primary">Formule V.I.P.</span></th>
+                            <th><center><span class="label label-success">Formule ECO</span></center></th> 
+                        <th><center><span class="label label-info">Formule STANDART</span></center></th>
+                        <th><center><span class="label label-primary">Formule V.I.P.</span></center></th>
                         </tr>
 
                         <tr>
                             <td>Mise en penderie des vêtements sur cintres</td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-ok"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
 
                         </tr>
 
                         <tr>
                             <td>Protection et conditionnement du mobilier</td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-ok"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Manutention, transport en camion capitonné</td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-ok"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Démarches pour autorisations de stationnement</td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-ok"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Livraison a domicile de cartons et adhésifs</td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-ok"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Démontage et remontage des meubles</td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-remove"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Emballage des objets fragiles.</td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td> 
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-remove"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                         <tr>
                             <td>Emballage intégral des objets non fragiles.</td>
-                            <td><span class="glyphicon glyphicon-remove"></span></td> 
-                            <td><span class="glyphicon glyphicon-remove"></span></td>
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
+                            <td><center><span class="glyphicon glyphicon-remove"></span></center></td> 
+                        <td><center><span class="glyphicon glyphicon-remove"></span></center></td>
+                        <td><center><span class="glyphicon glyphicon-ok"></span></center></td>
                         </tr>
                     </table>
                 </div>
 
-
-
-
-                <div class="page-header">
-                </div>
-                <div class="well">
-                    <p>Pour votre information les demenageurs AMEGO situés à Paris (75) interviennent essentiellemement dans les département limitrophes; Yvelines (78), hauts de seine (92), seine st denis (93), val de marne (94), seine et marne (77), essonne (91).</p>
-                </div>
-
-               <!-- FOOTER -->
-                <?php
-                include INCLUDESITE . '/menu/footer.php';
-                ?>
+                <!-- FOOTER -->
             </div> 
         </section>
+
+
+
+        <section class="container">
+
+            <div class="col-lg-12">
+                <h2 class="page-header">Services</h2>
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#service-one" data-toggle="tab">Service Economique</a>
+                    </li>
+                    <li class=""><a href="#service-two" data-toggle="tab">Service Standard</a>
+                    </li>
+                    <li class=""><a href="#service-three" data-toggle="tab">Service VIP</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="service-one">
+                        <i class="fa fa-gear pull-left fa-4x">Standard </i>
+                        <p>Description</p>
+                        <p>blabla</p>
+                    </div>
+                    <div class="tab-pane fade" id="service-two">
+                        <i class="fa fa-gears pull-left fa-4x"></i>
+                        <p>Description</p>
+                    </div>
+                    <div class="tab-pane fade" id="service-three">
+                        <i class="fa fa-magic pull-left fa-4x"></i>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <?php
+        include INCLUDESITE . '/menu/footer.php';
+        ?>
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
