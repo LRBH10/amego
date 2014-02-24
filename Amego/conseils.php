@@ -37,7 +37,7 @@ include_once './config/config.php';
                     <small> pour déménager</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Accueil</a>
                     </li>
                     <li class="active">Conseils</li>
                 </ol>
