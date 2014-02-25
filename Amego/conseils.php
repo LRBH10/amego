@@ -1,5 +1,6 @@
 <?php
 include_once './config/config.php';
+include_once './menu/navigation.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +14,12 @@ include_once './config/config.php';
     <title>Conseil</title>
 
     <!-- Bootstrap core CSS -->
+    
     <link href="<?php echo RESOURCESITE;?>css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="<?php echo RESOURCESITE;?>css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo RESOURCESITE;?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +39,7 @@ include_once './config/config.php';
                     <small> pour déménager</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.html">Accueil</a>
                     </li>
                     <li class="active">Conseils</li>
                 </ol>
@@ -156,9 +158,10 @@ include_once './config/config.php';
     <!-- /.container -->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/modern-business.js"></script>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
+        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
 
 </body>
 
