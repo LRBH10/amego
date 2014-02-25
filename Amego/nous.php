@@ -31,13 +31,13 @@ include_once './config/config.php';
         <div class="row">
 
             <div class="col-lg-12">
-                <h1 class="page-header">About
-                    <small>It's Nice to Meet You!</small>
+                <h1 class="page-header">Qui
+                    <small>sommes nous ?</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="index.php">Accueil</a>
                     </li>
-                    <li class="active">About</li>
+                    <li class="active">Qui Sommes Nous</li>
                 </ol>
             </div>
 
@@ -46,12 +46,14 @@ include_once './config/config.php';
         <div class="row">
 
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/750x450">
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>quiSommeNous.jpg">
             </div>
             <div class="col-md-6">
-                <h2>Welcome to 'Modern Business'</h2>
-                <p>This is a great place to introduce your company or project and describe what you do. This about page features general company information, employee bios, and other helpful elements.</p>
-                <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                <h2>AMEGO déménagement</h2>
+                <p>Bienvenue dans Rue89, un endroit où l'on discute, où l'on se rencontre, où l'on prend l'air. Une nouvelle aventure au cœur de la révolution en cours de l'information. Notre ambition : inventer un média qui marie journalisme professionnel et culture de l'Internet.</p>
+                <p>Créé par des journalistes, dont plusieurs sont issus de Libération, ce site se concentre sur les sujets qui font parler, jaser, débattre, dans tous les domaines, de la politique au sport, en passant par les nouvelles technologies, la culture ou l'environnement.</p>
+                <p>Nous rêvons que Rue89 devienne peu à peu le point de référence obligé pour tous ceux qui ne veulent pas se contenter de « consommer » l'information et se passionnent pour la confrontation d'idées</p>
+                <p>Le site est ouvert sur le reste du monde. Il ne se contente pas de critiquer, il est toujours à la recherche de solutions et se propose d'aider à leur mise en oeuvre. Il fait une large place à la photo et à la vidéo.</p>
             </div>
 
         </div>
@@ -61,15 +63,15 @@ include_once './config/config.php';
         <div class="row">
 
             <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
+                <h2 class="page-header">Notre Equipe</h2>
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne1.jpg">
+                <h3>Pierre Haski 
+                    <small>Président</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -83,11 +85,11 @@ include_once './config/config.php';
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne2.jpg">
+                <h3>Laurent Mauriac
+                    <small>Vice directeur</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -101,11 +103,11 @@ include_once './config/config.php';
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne3.jpg">
+                <h3>Marianne Riché
+                    <small>Technicienne</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -119,11 +121,11 @@ include_once './config/config.php';
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne4.jpg">
+                <h3>Yann Guégan
+                    <small>Permanent</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -137,11 +139,11 @@ include_once './config/config.php';
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne5.jpg">
+                <h3>Ramsès Kefi.
+                    <small>Permanent</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -155,11 +157,11 @@ include_once './config/config.php';
             </div>
 
             <div class="col-sm-4">
-                <img class="img-responsive" src="http://placehold.it/750x450">
-                <h3>John Smith
-                    <small>Job Title</small>
+                <img class="img-responsive" src="<?php echo IMAGESITE;?>personne6.jpg">
+                <h3>Clément Guillou
+                    <small>Permanent</small>
                 </h3>
-                <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -174,7 +176,7 @@ include_once './config/config.php';
 
         </div>
 
-        <!-- Our Customers -->
+<!--         Our Customers 
 
         <div class="row">
 
@@ -208,7 +210,7 @@ include_once './config/config.php';
 
         </div>
 
-    </div>
+    </div>-->
     <!-- /.container -->
 
     <div class="container">
