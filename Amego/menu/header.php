@@ -19,7 +19,6 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">
-                <li><a href="<?php echo ROOTSITE; ?>index.php">Accueil</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>service.php">Nos services</a></li>
                 
                 <li class="dropdown">
