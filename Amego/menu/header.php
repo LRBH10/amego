@@ -18,19 +18,27 @@
             <a class="navbar-brand" href="<?php echo ROOTSITE; ?>index.php">AMEGO</a>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
-                <li><a href="<?php echo ROOTSITE; ?>service.php">Nos services</a></li>
+            <ul class="nav navbar-nav pull-right">                
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Les formules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="<?php echo ROOTSITE; ?>formules.php#formule_eco">Formule économique</a></li>
+                            <li><a href="<?php echo ROOTSITE; ?>formules.php#formule_standard">Formule standard</a></li>
+                            <li><a href="<?php echo ROOTSITE; ?>formules.php#formule_luxe">Formule luxe</a></li>
+                            <li><a href="<?php echo ROOTSITE; ?>formules.php#comparaisons">Comparaisons</a></li>
+                        </ul>
+                </li>  
                 
                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Déménager <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo ROOTSITE; ?>devis.php">Devis déménagement</a></li>
+                            <li><a href="<?php echo ROOTSITE; ?>devis_v2.php">Devis déménagement</a></li>
                             <li><a href="<?php echo ROOTSITE; ?>volume.php">Calcule du Volume</a></li>
                             <li><a href="<?php echo ROOTSITE; ?>conseils.php">Conseils</a></li>
                         </ul>
                 </li>           
                     
-                
+                <li><a href="<?php echo ROOTSITE; ?>garantie.php">Garanties</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>nous.php">Qui Somme Nous</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>contact.php">Nous Contactez</a></li>
             </ul>

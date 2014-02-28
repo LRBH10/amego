@@ -29,6 +29,38 @@ include_once 'config/config.php';
         <?php
         include INCLUDESITE . '/menu/header.php';
         ?>
+        <div class="container">
+        <div class="row">
+
+                <div class="col-lg-12">
+                    <h1 class="page-header">Qui
+                        <small>sommes nous ?</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.php">Accueil</a>
+                        </li>
+                        <li class="active">Qui Sommes Nous</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>quiSommeNous.jpg">
+                </div>
+                <div class="col-md-6">
+                    <h2>AMEGO déménagement</h2>
+                    <p>Bienvenue dans Rue89, un endroit où l'on discute, où l'on se rencontre, où l'on prend l'air. Une nouvelle aventure au cœur de la révolution en cours de l'information. Notre ambition : inventer un média qui marie journalisme professionnel et culture de l'Internet.</p>
+                    <p>Créé par des journalistes, dont plusieurs sont issus de Libération, ce site se concentre sur les sujets qui font parler, jaser, débattre, dans tous les domaines, de la politique au sport, en passant par les nouvelles technologies, la culture ou l'environnement.</p>
+                    <p>Nous rêvons que Rue89 devienne peu à peu le point de référence obligé pour tous ceux qui ne veulent pas se contenter de « consommer » l'information et se passionnent pour la confrontation d'idées</p>
+                    <p>Le site est ouvert sur le reste du monde. Il ne se contente pas de critiquer, il est toujours à la recherche de solutions et se propose d'aider à leur mise en oeuvre. Il fait une large place à la photo et à la vidéo.</p>
+                </div>
+
+            </div>
+            
+            </div>
 
         <section class="container theme-showcase" role="main">
 

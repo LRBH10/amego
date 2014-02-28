@@ -43,20 +43,19 @@ include_once './menu/navigation.php';
             <div class="item active">
                 <div class="fill" style="background-image:url('images/demenageur.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Modern Business - A Bootstrap 3 Template</h1>
+                    <h1>AMEGO</h1>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('images/experience.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Ready to Style &amp; Add Content</h1>
+                    <h1>Experience</h1>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('images/assurance.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
-                    </h1>
+                    <h1>Garantie</h1>
                 </div>
             </div>
         </div>
@@ -82,8 +81,8 @@ include_once './menu/navigation.php';
                     </div>
                     <div class="col-md-8">
                         <p>Nos formules sont adaptées à vos besoins. De la formule économique à la luxe, sans oublier la formule standard.</p>
-                    </div>
-                    <a class="btn btn-sm btn-primary pull-left btn-block" href="service.php">Plus d'information >></a>                   
+                    </div> 
+                   <a class="btn btn-sm btn-primary pull-left btn-block" href="service.php">Plus d'information >></a>                   
                 </div>
                 <div class="col-lg-4">                    
                     <h3><i class="fa fa-check-circle"></i> Paiement facilité</h3>
