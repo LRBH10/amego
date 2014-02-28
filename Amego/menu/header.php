@@ -39,6 +39,7 @@
                 </li>           
                     
                 <li><a href="<?php echo ROOTSITE; ?>garantie.php">Garanties</a></li>
+                <li><a href="<?php echo ROOTSITE; ?>nosmoyens.php">Nos Moyens</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>nous.php">Qui Somme Nous</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>contact.php">Nous Contactez</a></li>
             </ul>
