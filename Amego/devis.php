@@ -1,241 +1,235 @@
 <?php
-include_once 'config/config.php';
+include_once './config/config.php';
+include_once './menu/navigation.php';
 ?>
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
-        <title>Devi déménagement</title>
+        <title>Conseil</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap-theme.min.css" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
+        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
 
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- Add custom CSS here -->
+        <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
+        <link href="<?php echo RESOURCESITE; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    </head>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <style type="text/css"></style><style id="holderjs-style" type="text/css"></style></head>
-
-    <body role="document" style="">
-
+    <body>
 
         <?php
-        include INCLUDESITE . '/menu/header.php';
+        include './menu/header.php';
         ?>
 
+        <!-- Page Content -->
 
-        <div class="container theme-showcase" role="main">
+        <div class="container">
 
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <h1>Demande de devis déménagement</h1>
-                <p>Pour renseigner nos services et afin de mieux répondre à votre demande vous pouvez dors et déjà 
-                    compléter ces quels éléments utiles à l'organisation de votre déménagement. Nos déménageurs pourront 
-                    ainsi vous répondre plus efficacement.</p>
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1 class="page-header">Devis déménagement
+                        <small> gratuit</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Accueil</a>
+                        </li>
+                        <li class="active">Devis Déménagement</li>
+                    </ol>
+                </div>
+
             </div>
+            <!-- /.row -->
+
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>devis.png">
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+
+            <div class="row">
+                <!--        Version 3 -->     
+                <div class="col-lg-6">
+                    <h2>Informations Clients :</h2>
+
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Coordonées personnelles</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group col-xs-6">
+                                <label for="devisNom">Nom</label>
+                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Votre nom">
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="devisPrenom">Prenom</label>
+                                <input type="text" name="devisPrenom" class="form-control" id="devisPrenom" placeholder="Votre prenom">
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="devisTel">Téléphone</label>
+                                <input type="text" name="devisTel" class="form-control" id="devisTel" placeholder="Votre numéro">
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="devisMail">E-Mail</label>
+                                <input type="text" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email">
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2>Informations Biens :</h2>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Objects spéciaux et Volume totale</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-sm-6">
+                                <label for="devisObjetsSpe">Objects spéciaux</label>
+                                <textarea id="devisObjetsSpe" name="devisObjetsSpe" class="form-control" rows="5" placeholder="Précisez ici si vous avez des objets spéciaux"></textarea>
+                            </div>                    
+                            <div class="form-group col-xs-6">
+                                <label for="devisNom">Volume</label>
+                                <div class="list-group">
+                                    <a href="volume.php" class="list-group-item list-group-item-warning">Calculer le volume</a>
+                                </div>
+                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Entrez le volume ici">                        
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+
+
+                <div class="col-lg-12">
+                    <h2>Informations Déménagement :</h2>
+                    <div class="col-lg-6">                        
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Départ</h1>
+                            </div>
+                            <div class="panel-body">    
+                                <div class="col-sm-6">
+                                    <label for="devisDate">Date</label>
+                                    <input type="date" name="devisDate" class="form-control" id="devisDate">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisRueDep">Rue</label>
+                                    <input type="text" name="devisRueDep" class="form-control" id="devisRueDep" placeholder="Rue (départ)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisCodePostalDep">Code postal</label>
+                                    <input type="text" name="devisCodePostalDep" class="form-control" id="devisCodePostalDep" placeholder="Code postal (départ)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisVilleDep">Ville</label>
+                                    <input type="text" name="devisVilleDep" class="form-control" id="devisVilleDep" placeholder="Ville (départ)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisEtageDep">Etage</label>
+                                    <input type="number" name="devisEtageDep" class="form-control" id="devisEtageDep" placeholder="Etage (départ)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisAscenceurDep">Ascenceur</label>
+                                    <select class="form-control" id="devisAscenceurDep">
+                                        <option>Aucun</option>
+                                        <option>Ascenceur petit</option>
+                                        <option>Ascenceur moyen</option>
+                                        <option>Ascenceur grand</option>
+                                    </select>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Arrivé</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-6">
+                                    <label for="devisRueArr">Rue</label>
+                                    <input type="text" name="devisRueArr" class="form-control" id="devisRueArr" placeholder="Rue (arrivé)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisCodePostalArr">Code postal</label>
+                                    <input type="text" name="devisCodePostalArr" class="form-control" id="devisCodePostalArr" placeholder="Code postal (arrivé)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisVilleArr">Ville</label>
+                                    <input type="text" name="devisVilleArr" class="form-control" id="devisVilleArr" placeholder="Ville (arrivé)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisEtageArr">Etage</label>
+                                    <input type="number" name="devisEtageArr" class="form-control" id="devisEtageArr" placeholder="Etage (arrivé)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="devisAscenceurArr">Ascenceur</label>
+                                    <select class="form-control" id="devisAscenceurArr">
+                                        <option>Aucun</option>
+                                        <option>Ascenceur petit</option>
+                                        <option>Ascenceur moyen</option>
+                                        <option>Ascenceur grand</option>
+                                    </select>                        
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-lg-offset-3">
+                    <h2>Informations Complementaires :</h2>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Commentaire</h1>
+                        </div>
+                        <div class="panel-body">
+                            <textarea id="devisComment" name="devisComment" class="form-control" rows="8" placeholder="Indiquez dans la case une indication concernant votre demenagement, plus vous donnerez des informations précises, plus le devis de votre demenagement sera précis"></textarea>                   
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <button type="button" class="btn btn-warning btn-lg btn-block ">Envoyez</button>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
 
             <div class="container">
 
-                <form class="form-horizontal" role="form">
-                    <h1><span class="label label-default">Vos coordonnées</span></h1>
-                    <br/>
-                    <div class="form-group">
-                        <span for="inputNom" class="col-sm-2 label label-success">Votre nom</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputNom">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputTelephone" class="col-sm-2 label label-info">Téléphone</span>   
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputTelephone">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputDate" class="col-sm-2 label label-warning">Date de déménagement prévu</span>   
-                        <div class="col-sm-10">
-                            <input type="date" class="form-control" id="inputDate">
-                        </div>
-                    </div>
+                <hr>
 
-                    <h1><span class="label label-default">Adresse de départ</span></h1>
-                    <br/>
-                    <div class="form-group">
-                        <span for="inputAdresse" class="col-sm-2 label label-success">Adresse</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputAdresse">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputCodePostal" class="col-sm-2 label label-info">Code postal</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputCodePostal">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputEtage" class="col-sm-2 label label-warning">Etage</span>
-                        <div class="col-sm-10">
-                            <select class="form-control" id="inputEtage">
-                                <option>RDC</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                <option>17</option>
-                                <option>18</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputAscenceur" class="col-sm-2 label label-success">Adresse</span>
-                        <div class="col-sm-10">
-                            <select class="form-control" id="inputAscenceur">
-                                <option>Oui</option>
-                                <option>Non</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputPortage" class="col-sm-2 label label-info">Portage</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPortage" placeholder="distance entre le stationnement et l'accès à l'immeuble">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputPrecision" class="col-sm-2 label label-warning">Précision</span>
-                        <div class="col-sm-10">
-                            <textarea id="inputPrecision" class="form-control" rows="3" placeholder="Précisez ici si vous avez des objets lourds et encombrants, votre ascenceur est-il petit, moyen, grand etc..."></textarea>
-                        </div>
-                    </div>            
-
-                    <h1><span class="label label-default">Adresse d'arrivée</span></h1>
-                    <br/>
-
-                    <div class="form-group">
-                        <span for="inputAdresseAr" class="col-sm-2 label label-success">Adresse</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputAdresseAr">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputCodePostalAr" class="col-sm-2 label label-info">Code postal</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputCodePostalAr">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputEtageAr" class="col-sm-2 label label-warning">Etage</span>
-                        <div class="col-sm-10">
-                            <select class="form-control" id="inputEtageAr">
-                                <option>RDC</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                <option>17</option>
-                                <option>18</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputAscenceurAr" class="col-sm-2 label label-success">Adresse</span>
-                        <div class="col-sm-10">
-                            <select class="form-control" id="inputAscenceurAr">
-                                <option>Oui</option>
-                                <option>Non</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputPortageAr" class="col-sm-2 label label-info">Portage</span>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputPortageAr" placeholder="distance entre le stationnement et l'accès à l'immeuble">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <span for="inputPrecisionAr" class="col-sm-2 label label-warning">Précision</span>
-                        <div class="col-sm-10">
-                            <textarea id="inputPrecisionAr" class="form-control" rows="3" placeholder="Précisez ici si vous avez des objets lourds et encombrants, votre ascenceur est-il petit, moyen, grand etc..."></textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </div>
-                    </div>
-                </form>
-
-
-
-
-                <div class="page-header">
-                </div>
-                <div class="well">
-                    <p>Pour votre information les demenageurs AMEGO situés à Paris (75) interviennent essentiellemement dans les département limitrophes; Yvelines (78), hauts de seine (92), seine st denis (93), val de marne (94), seine et marne (77), essonne (91).</p>
-                </div>
-
-
-                <hr class="featurette-divider">
-
-                <!-- /END THE FEATURETTES -->
-
-
-                <!-- FOOTER -->
                 <footer>
-                    <p class="pull-right"><a href="#">Back to top</a></p>
-                    <p>&copy; 2014 AMEGO, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; AMEGO 2014</p>
+                        </div>
+                    </div>
                 </footer>
 
-            </div> <!-- /container -->
+            </div>
+            <!-- /.container -->
 
-
-            <!-- Bootstrap core JavaScript
-            ================================================== -->
+            <!-- JavaScript -->
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
             <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
             <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
 
-    </body></html>
+    </body>
+
+</html>

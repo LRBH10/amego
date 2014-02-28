@@ -43,7 +43,8 @@ include_once './menu/navigation.php';
             <div class="item active">
                 <div class="fill" style="background-image:url('images/demenageur.jpg');"></div>
                 <div class="carousel-caption">
-                    <h1>AMEGO</h1>
+                    <h1>Bienvenue chez AMEGO déménagement  </h1>
+                    <a href="volume.php" class="btn btn-lg btn-primary "> Simulez combien ça vous coûtera approximativement  ??</a>
                 </div>
             </div>
             <div class="item">

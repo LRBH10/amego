@@ -32,7 +32,7 @@
                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Déménager <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo ROOTSITE; ?>devis_v2.php">Devis déménagement</a></li>
+                            <li><a href="<?php echo ROOTSITE; ?>devis.php">Devis déménagement</a></li>
                             <li><a href="<?php echo ROOTSITE; ?>volume.php">Calcule du Volume</a></li>
                             <li><a href="<?php echo ROOTSITE; ?>conseils.php">Conseils</a></li>
                         </ul>
