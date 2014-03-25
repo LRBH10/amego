@@ -79,6 +79,6 @@ function calculeVolume()
     volume += parseInt(document.getElementById("inCarton").value) * 0.5;
     
     document.getElementById("volumeVal").innerHTML=volume;
-    if(volume < 0)
+    if(volume > 0)
         document.getElementById("calculatedVolume").value = volume;
 }
