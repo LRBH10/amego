@@ -20,9 +20,24 @@ include_once './menu/navigation.php';
         <!-- Add custom CSS here -->
         <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
         <link href="<?php echo RESOURCESITE; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        <script>            
+            var autocompleteDepart, autocompleteDesct;
+
+            function initialize() {
+              // Create the autocomplete object, restricting the search
+              // to geographical location types.
+                autocompleteDepart = new google.maps.places.Autocomplete(
+                  /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDep')),
+                  { types: ['geocode'] });
+                autocompleteDesct = new google.maps.places.Autocomplete(
+                  /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDest')),
+                  { types: ['geocode'] });
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="initialize()">
 
         <?php
         include './menu/header.php';
@@ -124,21 +139,13 @@ include_once './menu/navigation.php';
                                 <h1 class="panel-title">Départ</h1>
                             </div>
                             <div class="panel-body">    
-                                <div class="col-sm-6">
+                                <div class="col-sm-4">
                                     <label for="devisDate">Date</label>
                                     <input type="date" name="devisDate" class="form-control" id="devisDate">
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="devisRueDep">Rue</label>
-                                    <input type="text" name="devisRueDep" class="form-control" id="devisRueDep" placeholder="Rue (départ)">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="devisCodePostalDep">Code postal</label>
-                                    <input type="text" name="devisCodePostalDep" class="form-control" id="devisCodePostalDep" placeholder="Code postal (départ)">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="devisVilleDep">Ville</label>
-                                    <input type="text" name="devisVilleDep" class="form-control" id="devisVilleDep" placeholder="Ville (départ)">
+                                <div class="col-sm-8">
+                                    <label for="devisRueDep">Adresse</label>
+                                    <input type="text" name="devisAdresseDep" class="form-control" id="devisAdresseDep" placeholder="Adresse (départ)">
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="devisEtageDep">Etage</label>
@@ -163,17 +170,9 @@ include_once './menu/navigation.php';
                                 <h1 class="panel-title">Arrivé</h1>
                             </div>
                             <div class="panel-body">
-                                <div class="col-sm-6">
-                                    <label for="devisRueArr">Rue</label>
-                                    <input type="text" name="devisRueArr" class="form-control" id="devisRueArr" placeholder="Rue (arrivé)">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="devisCodePostalArr">Code postal</label>
-                                    <input type="text" name="devisCodePostalArr" class="form-control" id="devisCodePostalArr" placeholder="Code postal (arrivé)">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="devisVilleArr">Ville</label>
-                                    <input type="text" name="devisVilleArr" class="form-control" id="devisVilleArr" placeholder="Ville (arrivé)">
+                                <div class="col-sm-12">
+                                    <label for="devisRueArr">Adresse</label>
+                                    <input type="text" name="devisAdresseDest" class="form-control" id="devisAdresseDest" placeholder="Adresse (arrivé)">
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="devisEtageArr">Etage</label>
