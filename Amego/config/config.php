@@ -20,18 +20,18 @@ define('INCLUDESITE', $_SERVER['DOCUMENT_ROOT'].'/projects/amego/Amego/');
  * Containt Host Web Site
  * 
  */
-define('ROOTSITE', 'http://127.0.0.1/projects/amego/Amego/');
+define('ROOTSITE', 'http://127.0.0.1:8080/projects/amego/Amego/');
 
 
 /**
  * Image Path
  */
-define('IMAGESITE', 'http://127.0.0.1/projects/amego/Amego/images/');
+define('IMAGESITE', 'http://127.0.0.1:8080/projects/amego/Amego/images/');
 
 
 /**
  *  Resource dist
  */
 
-define('RESOURCESITE', 'http://127.0.0.1/projects/amego/Amego/dist/');
+define('RESOURCESITE', 'http://127.0.0.1:8080/projects/amego/Amego/dist/');
 ?>

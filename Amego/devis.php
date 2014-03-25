@@ -57,7 +57,7 @@ include_once './menu/navigation.php';
             </div>
             <!-- /.row -->
 
-
+            <form data-toggle="validator" role="form">
             <div class="row">
                 <!--        Version 3 -->     
                 <div class="col-lg-6">
@@ -70,19 +70,21 @@ include_once './menu/navigation.php';
                         <div class="panel-body">
                             <div class="form-group col-xs-6">
                                 <label for="devisNom">Nom</label>
-                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Votre nom">
+                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Votre nom" required>
                             </div>
                             <div class="form-group col-xs-6">
                                 <label for="devisPrenom">Prenom</label>
-                                <input type="text" name="devisPrenom" class="form-control" id="devisPrenom" placeholder="Votre prenom">
+                                <input type="text" name="devisPrenom" class="form-control" id="devisPrenom" placeholder="Votre prenom" required>
                             </div>
                             <div class="form-group col-xs-6">
                                 <label for="devisTel">Téléphone</label>
-                                <input type="text" name="devisTel" class="form-control" id="devisTel" placeholder="Votre numéro">
+                                <input type="text" name="devisTel" class="form-control" id="devisTel" placeholder="Votre numéro" 
+                                       pattern="[0-9]+" maxlength="10" required>
                             </div>
                             <div class="form-group col-xs-6">
                                 <label for="devisMail">E-Mail</label>
-                                <input type="text" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email">
+                                <input type="email" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email" 
+                                       data-error="L'adresse e-mail n'est pas valide" required>
                             </div>                
                         </div>
                     </div>
@@ -104,7 +106,10 @@ include_once './menu/navigation.php';
                                 <div class="list-group">
                                     <a href="volume.php" class="list-group-item list-group-item-warning">Calculer le volume</a>
                                 </div>
-                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Entrez le volume ici">                        
+                                <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Entrez le volume ici"
+                                       <?php 
+                                            if(isset($_GET['calculatedVolume']))
+                                                echo 'value="'. $_GET['calculatedVolume'] .'"';?>>                        
                             </div>
                         </div>
                     </div>
@@ -202,11 +207,13 @@ include_once './menu/navigation.php';
                 </div>
                 
                 <div class="col-lg-12">
-                    <button type="button" class="btn btn-warning btn-lg btn-block ">Envoyez</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block">Envoyez</button>
                 </div>
                 <!-- /.row -->
 
             </div>
+                
+            </form>
             <!-- /.container -->
 
             <div class="container">
