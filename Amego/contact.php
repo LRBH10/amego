@@ -46,28 +46,29 @@ include_once './menu/navigation.php';
 
                 <div class="col-sm-8">
                     <h3>Soyons en contact!</h3>
-                    <form role="form" method="POST" action="contact-form-submission.php">
+                    <form role="form" method="POST" action="sendMail.php">
                         <div class="row">
                             <div class="form-group col-lg-4">
-                                <label for="input1">Votre Nom</label>
-                                <input type="text" name="contact_name" class="form-control" id="input1">
+                                <label for="contactNom">Votre Nom</label>
+                                <input type="text" name="contactNom" class="form-control" id="contactNom" required>
                             </div>
                             <div class="form-group col-lg-4">
-                                <label for="input2">Votre email</label>
-                                <input type="email" name="contact_email" class="form-control" id="input2">
+                                <label for="contactMail">Votre email</label>
+                                <input type="email" name="contactMail" class="form-control" id="contactMail" required>
                             </div>
                             <div class="form-group col-lg-4">
-                                <label for="input3">Votre numero de téléphone</label>
-                                <input type="phone" name="contact_phone" class="form-control" id="input3">
+                                <label for="contactTel">Votre numero de téléphone</label>
+                                <input type="phone" name="contactTel" class="form-control" id="contactTel" 
+                                       pattern="[0-9]+" maxlength="10" required>
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
-                                <label for="input4">Votre Message</label>
-                                <textarea name="contact_message" class="form-control" rows="6" id="input4"></textarea>
+                                <label for="contactMessage">Votre Message</label>
+                                <textarea name="contactMessage" class="form-control" rows="6" id="contactMessage" required></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Envoyez</button>
                             </div>
                         </div>
                     </form>

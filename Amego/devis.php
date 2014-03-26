@@ -35,59 +35,59 @@ include_once './menu/navigation.php';
                   { types: ['geocode'] });
             }
             
-            function faireRecapitulatif(){
-                var nom = document.getElementById("devisNom").value+ ' ' + document.getElementById("devisPrenom").value;
-                document.getElementById("recName").innerHTML=nom;
-                document.getElementById("sendName").innerHTML=nom;
-                
-                var tel = document.getElementById("devisTel").value;
-                document.getElementById("recTel").innerHTML=tel;
-                document.getElementById("sendTel").innerHTML=tel;
-                
-                var mail = document.getElementById("devisMail").value;
-                document.getElementById("recMail").innerHTML=mail;
-                document.getElementById("sendMail").innerHTML=mail;
-                
-                var date = document.getElementById("devisDate").value;
-                document.getElementById("recDate").innerHTML=date;
-                document.getElementById("sendDate").innerHTML=date;
-                
-                var adrDep = document.getElementById("devisAdresseDep").value;
-                document.getElementById("recAdrDep").innerHTML=adrDep;
-                document.getElementById("sendAdrDep").innerHTML=adrDep;
-                
-                var etageDep = document.getElementById("devisEtageDep").value;
-                document.getElementById("recEtageDep").innerHTML=etageDep;
-                document.getElementById("sendEtageDep").innerHTML=etageDep;
-                
-                var ascDep = document.getElementById("devisAscenceurDep").value;
-                document.getElementById("recAscenDep").innerHTML=ascDep;
-                document.getElementById("sendAscDep").innerHTML=ascDep;
-                
-                var adrArr = document.getElementById("devisAdresseDest").value;
-                document.getElementById("recAdrArr").innerHTML=adrArr;
-                document.getElementById("sendAdrArr").innerHTML=adrArr;
-                
-                var etageArr = document.getElementById("devisEtageArr").value;
-                document.getElementById("recEtageArr").innerHTML=etageArr;
-                document.getElementById("sendEtageArr").innerHTML=etageArr;
-                
-                var ascArr =document.getElementById("devisAscenceurArr").value;
-                document.getElementById("recAscenArr").innerHTML=ascArr;
-                document.getElementById("sendAscArr").innerHTML=ascArr;
-                
-                var vol = document.getElementById("devisVolume").value;
-                document.getElementById("recVolume").innerHTML=vol;
-                document.getElementById("sendVolume").innerHTML=vol;
-                
-                var objSpe = document.getElementById("devisObjetsSpe").value;
-                document.getElementById("recObjetsSpe").innerHTML=objSpe;
-                document.getElementById("sendObjSpe").innerHTML=objSpe;
-                
-                var comment = document.getElementById("devisComment").value;
-                document.getElementById("recComment").innerHTML=comment;
-                document.getElementById("sendComment").innerHTML=comment;
-            }
+//            function faireRecapitulatif(){
+//                var nom = document.getElementById("devisNom").value+ ' ' + document.getElementById("devisPrenom").value;
+//                document.getElementById("recName").innerHTML=nom;
+//                document.getElementById("sendName").innerHTML=nom;
+//                
+//                var tel = document.getElementById("devisTel").value;
+//                document.getElementById("recTel").innerHTML=tel;
+//                document.getElementById("sendTel").innerHTML=tel;
+//                
+//                var mail = document.getElementById("devisMail").value;
+//                document.getElementById("recMail").innerHTML=mail;
+//                document.getElementById("sendMail").innerHTML=mail;
+//                
+//                var date = document.getElementById("devisDate").value;
+//                document.getElementById("recDate").innerHTML=date;
+//                document.getElementById("sendDate").innerHTML=date;
+//                
+//                var adrDep = document.getElementById("devisAdresseDep").value;
+//                document.getElementById("recAdrDep").innerHTML=adrDep;
+//                document.getElementById("sendAdrDep").innerHTML=adrDep;
+//                
+//                var etageDep = document.getElementById("devisEtageDep").value;
+//                document.getElementById("recEtageDep").innerHTML=etageDep;
+//                document.getElementById("sendEtageDep").innerHTML=etageDep;
+//                
+//                var ascDep = document.getElementById("devisAscenceurDep").value;
+//                document.getElementById("recAscenDep").innerHTML=ascDep;
+//                document.getElementById("sendAscDep").innerHTML=ascDep;
+//                
+//                var adrArr = document.getElementById("devisAdresseDest").value;
+//                document.getElementById("recAdrArr").innerHTML=adrArr;
+//                document.getElementById("sendAdrArr").innerHTML=adrArr;
+//                
+//                var etageArr = document.getElementById("devisEtageArr").value;
+//                document.getElementById("recEtageArr").innerHTML=etageArr;
+//                document.getElementById("sendEtageArr").innerHTML=etageArr;
+//                
+//                var ascArr =document.getElementById("devisAscenceurArr").value;
+//                document.getElementById("recAscenArr").innerHTML=ascArr;
+//                document.getElementById("sendAscArr").innerHTML=ascArr;
+//                
+//                var vol = document.getElementById("devisVolume").value;
+//                document.getElementById("recVolume").innerHTML=vol;
+//                document.getElementById("sendVolume").innerHTML=vol;
+//                
+//                var objSpe = document.getElementById("devisObjetsSpe").value;
+//                document.getElementById("recObjetsSpe").innerHTML=objSpe;
+//                document.getElementById("sendObjSpe").innerHTML=objSpe;
+//                
+//                var comment = document.getElementById("devisComment").value;
+//                document.getElementById("recComment").innerHTML=comment;
+//                document.getElementById("sendComment").innerHTML=comment;
+//            }
         </script>
     </head>
 
@@ -127,7 +127,7 @@ include_once './menu/navigation.php';
 
            
             <div class="row">
-                 <form data-toggle="validator" role="form" action="sendMail.php">
+                <form data-toggle="validator" method="POST" role="form" action="sendMail.php">
                 <!--        Version 3 -->     
                 <div class="col-lg-6">
                     <h2>Informations Clients :</h2>
@@ -207,7 +207,7 @@ include_once './menu/navigation.php';
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="devisAscenceurDep">Ascenceur</label>
-                                    <select class="form-control" id="devisAscenceurDep">
+                                    <select class="form-control" name="devisAscenceurDep" id="devisAscenceurDep">
                                         <option>Aucun</option>
                                         <option>Ascenceur petit</option>
                                         <option>Ascenceur moyen</option>
@@ -234,7 +234,7 @@ include_once './menu/navigation.php';
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="devisAscenceurArr">Ascenceur</label>
-                                    <select class="form-control" id="devisAscenceurArr">
+                                    <select class="form-control" name="devisAscenceurArr" id="devisAscenceurArr">
                                         <option>Aucun</option>
                                         <option>Ascenceur petit</option>
                                         <option>Ascenceur moyen</option>
