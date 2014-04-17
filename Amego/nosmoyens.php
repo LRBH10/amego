@@ -68,6 +68,7 @@ include_once './config/config.php';
             {
                 var instanceOne = new ImageFlow();
                 instanceOne.init({ImageFlowID: 'unique_name'});
+                instanceOne.seal(true);
             });
         </script>
 
