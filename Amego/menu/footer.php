@@ -1,17 +1,18 @@
-<?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
 
 
 
 <footer  class="container">
-<hr class="featurette-divider">
-    <div class="well">
-        <p>Pour votre information les demenageurs AMEGO situés à Paris (75) interviennent essentiellemement dans les département limitrophes; Yvelines (78), hauts de seine (92), seine st denis (93), val de marne (94), seine et marne (77), essonne (91).</p>
+    <hr class="featurette-divider">
+    <div class="footeramego well">
+        <p>
+            Pour votre information les demenageurs AMEGO situés à <a href="index.php?where=PARIS"> Paris (75)</a> interviennent essentiellemement dans les départements d'<a href="index.php?where=Ile De France"> Ile De France </a>: 
+            <a href="index.php?where=Yvelines">Yvelines (78)</a>,
+            <a href="index.php?where=Hauts De Seine"> Hauts De Seine (92)</a>,
+            <a href="index.php?where=Seine ST Denis"> Seine ST Denis (93)</a>,
+            <a href="index.php?where=Val De Marne"> Val De Marne (94)</a>, 
+            <a href="index.php?where=Seine Et Marne"> Seine Et Marne (77)</a>,
+            <a href="index.php?where=Essone" > Essonne (91)</a>.
+        </p>
     </div>
 
 

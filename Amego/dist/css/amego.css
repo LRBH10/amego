@@ -130,3 +130,17 @@ footer {
  /* increases the carousel height so it looks good on phones */
   }
 }
+
+
+.top-buffer { 
+    margin-top:40px; 
+}
+
+
+.footeramego > h1 {
+    font-size: 12px;
+}
+
+.badgesize {
+    font-size:  17px;
+}

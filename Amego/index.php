@@ -12,7 +12,16 @@ include_once './menu/navigation.php';
         <meta name="description" content="Amego Demenagement">
         <meta name="author" content="LAOUADI Rabah">
 
-        <title>AMEGO DEMENAGEMENT</title>
+        <title> 
+            <?php
+            if (isset($_GET['where'])) {
+                $var = $_GET['where'];
+                echo $var . ' DEMENAGEMENT';
+            } else {
+                echo 'AMEGO DEMENAGEMENT';
+            }
+            ?>
+        </title>
 
         <!-- Bootstrap core CSS -->
         <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
@@ -42,13 +51,19 @@ include_once './menu/navigation.php';
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <div class="fill" style="background-image:url('images/demenageur.jpg');"></div>
-                    <div class="carousel-caption">
-                        <div class=" animated slideInDown delay-2">
-                            <h1>Bienvenue chez AMEGO déménagement  </h1>
+                    <div  class="row top-buffer">
+                        <div class=" col-md-offset-1 col-md-6 ">
+                            <div class=" animated slideInDown delay-2">
+                                <h3> Vous voulez  déménager ?   </h3>
+                                <h4> Vous chercher le déménageur qui offre meilleur  <span class="label label-default">qualité / prix</span>    </h4>
+                                <h4> Simulez combien ça vous coûtera ou demander un devis gratuit </h4>
+                            </div>
+                            <div class=" animated slideInLeft delay-3">
+                                <a href="volume.php" class="btn  btn-primary "> Simuler et Demender un devis </a> <a href="volume.php" class="btn  btn-primary "> Demander un devis   </a>
+                            </div>
                         </div>
-                        <div class=" animated slideInLeft delay-4">
-                            <a href="volume.php" class="btn btn-lg btn-primary "> Simulez combien ça vous coûtera approximativement  ??</a>
+                        <div class="col-md-3">
+                            <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/camion.png" />
                         </div>
                     </div>
                 </div>
@@ -265,20 +280,10 @@ include_once './menu/navigation.php';
         </div>
         <!-- /.container -->
 
-        <div class="container">
 
-            <hr>
-
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; AMEGO 2014</p>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
-        <!-- /.container -->
+        <?php
+        include './menu/footer.php';
+        ?>
 
 
         <!-- Bootstrap core JavaScript
