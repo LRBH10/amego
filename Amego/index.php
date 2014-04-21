@@ -50,33 +50,53 @@ include_once './menu/navigation.php';
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <div  class="row top-buffer">
-                        <div class=" col-md-offset-1 col-md-6 ">
+                <div class="item ">
+                    <div  class="row container top-buffer">
+                        <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 ">
                             <div class=" animated slideInDown delay-2">
                                 <h3> Vous voulez  déménager ?   </h3>
                                 <h4> Vous chercher le déménageur qui offre meilleur  <span class="label label-default">qualité / prix</span>    </h4>
                                 <h4> Simulez combien ça vous coûtera ou demander un devis gratuit </h4>
                             </div>
                             <div class=" animated slideInLeft delay-3">
-                                <a href="volume.php" class="btn  btn-primary "> Simuler et Demender un devis </a> <a href="volume.php" class="btn  btn-primary "> Demander un devis   </a>
+                                <a href="volume.php" class="btn  btn-primary "> Simuler Votre déménegament et Demander un devis </a> 
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/index/camion.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="item active"> 
+                    <div  class="row ">
+                        <div class=" col-md-offset-1 col-md-6 top-buffer ">
+                            <div class=" animated slideInDown delay-2">
+                                <h3> Vous avez des  suggestions precises pour votre déménegement   </h3>
+                                <h4> Nous mettrons toutes <span class="label label-default">notre experience et notre savoir faire </span> pour vous satisfaire  </h4>
+                                <h4> Vous pouvez  demander un devis gratuit et nous vous rappalerons dans les plus bref delai pour en discuter d'avantage</h4>
+                            </div>
+                            <div class=" animated slideInLeft delay-3">
+                                <a href="./devis.php" class="btn  btn-primary "> Demander un devis   </a>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/camion.png" />
+                            <img class=" animated slideInRight delay-4" width="300px" height="317px" src="./images/index/experiance2.png" />
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image:url('images/experience.jpg');"></div>
-                    <div class="carousel-caption">
-                        <h1>Experience</h1>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('images/assurance.jpg');"></div>
-                    <div class="carousel-caption">
-                        <h1>Garantie</h1>
+                     <div  class="row top-buffer">
+                        <div class=" col-md-offset-1 col-md-6  ">
+                            <div class=" animated slideInDown delay-2">
+                                <h3> Vous avez des  objets précieux ou fragiles  </h3>
+                                <h4> Et vous avez <span class="label label-default">peur de les perdres ou qu'ils se cassent </span>   </h4>
+                                <h4> Nous partenaire d'assurance sont les garant de vos objets </h4>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            <img class=" animated slideInRight delay-4" width="281px" height="179px" src="./images/index/assurances.jpg" />
+                        </div>
                     </div>
                 </div>
             </div>
