@@ -50,7 +50,7 @@ include_once './menu/navigation.php';
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item ">
+                <div class="item active ">
                     <div  class="row container top-buffer">
                         <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 ">
                             <div class=" animated slideInDown delay-2">
@@ -63,11 +63,11 @@ include_once './menu/navigation.php';
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
-                            <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/index/camion.png" />
+                            <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/index/camion1.png" />
                         </div>
                     </div>
                 </div>
-                <div class="item active"> 
+                <div class="item "> 
                     <div  class="row ">
                         <div class=" col-md-offset-1 col-md-6 top-buffer ">
                             <div class=" animated slideInDown delay-2">
