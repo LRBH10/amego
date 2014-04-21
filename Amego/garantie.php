@@ -51,7 +51,7 @@ include_once './menu/navigation.php';
             <div id="formule_eco" class="row">
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>assurance.jpg">
+                    <img class="img-responsive" src="./images/assurance.jpg">
                 </div>
                 <div class="col-md-6">                    
                     
@@ -79,7 +79,7 @@ include_once './menu/navigation.php';
                 </div>
                 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>assurance2.jpg">
+                    <img class="img-responsive" src="./images/assurance2.jpg">
                 </div>
 
             </div>            
@@ -94,8 +94,8 @@ include_once './menu/navigation.php';
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./dist/js/holder.js"></script>
 
     </body>
 

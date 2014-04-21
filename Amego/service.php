@@ -11,7 +11,7 @@ include_once 'config/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
+        <link rel="shortcut icon" href="./images/favicon.png">
 
         <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
         <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
@@ -19,8 +19,8 @@ include_once 'config/config.php';
         <title>Services </title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
         <style type="text/css"></style>
         <style id="holderjs-style" type="text/css"></style>
@@ -51,7 +51,7 @@ include_once 'config/config.php';
             <div class="row">
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>quiSommeNous.jpg">
+                    <img class="img-responsive" src="./images/quiSommeNous.jpg">
                 </div>
                 <div class="col-md-6">
                     <h2>AMEGO déménagement</h2>
@@ -199,7 +199,7 @@ include_once 'config/config.php';
         ?>
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
 
     </body>
 </html>

@@ -16,12 +16,12 @@ include_once './config/config.php';
         <title>Calcule du volume</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
-        <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
+        <link href="./dist/css/modern-business.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <script src="<?php echo RESOURCESITE; ?>js/amego.js"></script>
+        <script src="./dist/js/amego.js"></script>
     </head>
 
     <body>
@@ -50,7 +50,7 @@ include_once './config/config.php';
             <div class="row">
 
                 <div class="col-md-3">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>volume.jpg">
+                    <img class="img-responsive" src="./images/volume.jpg">
                 </div>
 
                 <div class="col-md-6">
@@ -61,7 +61,7 @@ include_once './config/config.php';
 
                 </div>
                 <div class="col-md-3">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>metro.jpg">
+                    <img class="img-responsive" src="./images/metro.jpg">
                 </div>
             </div>
 
@@ -74,7 +74,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5" >
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>armoire.jpg">
+                        <img class="img-thumbnail" src="./images/armoire.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inArmoire1porte" class="col-sm-8 control-label">Armoire 1 porte</label>
@@ -98,7 +98,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>canape.jpg">
+                        <img class="img-thumbnail" src="./images/canape.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inCanape1place" class="col-sm-8 control-label">Canapé 1 place</label>
@@ -123,7 +123,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>buffet.jpg">
+                        <img class="img-thumbnail" src="./images/buffet.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inBuffetHaut" class="col-sm-8 control-label">Buffet haut</label>
@@ -139,7 +139,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>meubletv.jpg">
+                        <img class="img-thumbnail" src="./images/meubletv.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inLiving" class="col-sm-8 control-label">Living</label>
@@ -155,7 +155,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>vaisselier.jpg">
+                        <img class="img-thumbnail" src="./images/vaisselier.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inVaisselier" class="col-sm-8 control-label">Vaisselier</label>
@@ -167,7 +167,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>meublecusine.jpg">
+                        <img class="img-thumbnail" src="./images/meublecusine.jpg">
                     </div>
                     <div class="col-md-6">
                         <label for="inCusineHaut" class="col-sm-8 control-label">Meuble cuisine haut</label>
@@ -184,7 +184,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>matelas.jpg">
+                        <img class="img-thumbnail" src="./images/matelas.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inMatela1place" class="col-sm-8 control-label">Matelas 1 place</label>
@@ -208,7 +208,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>tv.jpg">
+                        <img class="img-thumbnail" src="./images/tv.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inPetiteTv" class="col-sm-8 control-label">Petite TV</label>
@@ -232,7 +232,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>velo.jpg">
+                        <img class="img-thumbnail" src="./images/velo.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inVeloAdulte" class="col-sm-8 control-label">Vélo adulte</label>
@@ -252,7 +252,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>commode.jpg">
+                        <img class="img-thumbnail" src="./images/commode.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inCommode" class="col-sm-8 control-label">Commode</label>
@@ -268,7 +268,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>bureau.jpg">
+                        <img class="img-thumbnail" src="./images/bureau.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inBurreauSimple" class="col-sm-8 control-label">Burreau simple</label>
@@ -284,7 +284,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>table.jpg">
+                        <img class="img-thumbnail" src="./images/table.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inTableManger" class="col-sm-8 control-label">Table à manger</label>
@@ -300,7 +300,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>chaise.jpg">
+                        <img class="img-thumbnail" src="./images/chaise.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inChaise" class="col-sm-8 control-label">Chaise</label>
@@ -316,7 +316,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>etagiere.jpg">
+                        <img class="img-thumbnail" src="./images/etagiere.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inEtagiere" class="col-sm-8 control-label">Etagière</label>
@@ -328,7 +328,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>laveligne.jpg">
+                        <img class="img-thumbnail" src="./images/laveligne.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inLaveLigne" class="col-sm-8 control-label">Lave linge</label>
@@ -364,7 +364,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>piano.jpg">
+                        <img class="img-thumbnail" src="./images/piano.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inPianoDroit" class="col-sm-8 control-label">Piano droit</label>
@@ -384,7 +384,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>statue.jpg">
+                        <img class="img-thumbnail" src="./images/statue.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inStatue" class="col-sm-8 control-label">Statue</label>
@@ -404,7 +404,7 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <div class="col-md-5">
-                        <img class="img-thumbnail" src="<?php echo IMAGESITE; ?>carton.jpg">
+                        <img class="img-thumbnail" src="./images/carton.jpg">
                     </div>
                     <div class="col-md-6">                            
                         <label for="inCarton" class="col-sm-8 control-label">Carton</label>
@@ -458,8 +458,8 @@ include_once './config/config.php';
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>            
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./dist/js/holder.js"></script>            
     </body>
 
 </html>

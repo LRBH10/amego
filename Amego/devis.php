@@ -18,11 +18,11 @@ include_once './menu/navigation.php';
 
         <!-- Bootstrap core CSS -->
 
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
-        <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
-        <link href="<?php echo RESOURCESITE; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./dist/css/modern-business.css" rel="stylesheet">
+        <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
         <script>
             var autocompleteDepart, autocompleteDesct;
@@ -123,7 +123,7 @@ include_once './menu/navigation.php';
 
                 <div class="col-lg-12">
                     Rabah
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>devis.png" />
+                    <img class="img-responsive" src="./images/devis.png" />
                 </div>
 
             </div>
@@ -343,8 +343,8 @@ include_once './menu/navigation.php';
             <!-- JavaScript -->
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-            <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+            <script src="./dist/js/bootstrap.min.js"></script>
+            <script src="./dist/js/holder.js"></script>
 
     </body>
 

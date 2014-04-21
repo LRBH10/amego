@@ -80,8 +80,8 @@ include_once './menu/navigation.php';
                 <address class="col-sm-4">
                     <h3>AMEGO Déménagement</h3>
                     <p>
-                        Rue ..... <br>
-                        Paris, 00000<br>
+                        7, Rue Gauthey <br>
+                        Paris, 75017<br>
                     </p>
                     <p><span class="glyphicon glyphicon-phone-alt"></span> <abbr title="Phone">P</abbr>: +33 (0)1 42 26 52 20</p>
                     <p><span class="glyphicon glyphicon-envelope"></span> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">contact@amego.fr</a></p>

@@ -27,20 +27,19 @@ include_once './menu/navigation.php';
         </title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
 
         <!-- Add custom CSS here -->
-        <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
-        <link href="<?php echo RESOURCESITE; ?>css/animated.css" rel="stylesheet">
-        <link href="<?php echo RESOURCESITE; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./dist/css/animated.css" rel="stylesheet">
+        <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     </head>
 
     <body role="document">
 
         <?php
-        include INCLUDESITE . '/menu/header.php';
+        include './menu/header.php';
         ?>
 
         <div id="myCarousel" class="carousel slide">
@@ -55,7 +54,7 @@ include_once './menu/navigation.php';
             <div class="carousel-inner">
                 <div class="item active ">
                     <div  class="row container top-buffer">
-                        <div class="col-lg-offset-3 col-lg-7 col-md-offset-1 col-md-6 ">
+                        <div class="col-lg-offset-2 col-lg-6 col-md-offset-1 col-md-6 ">
                             <div class=" animated slideInDown delay-2">
                                 <h3> Vous voulez  déménager ?   </h3>
                                 <h4> Vous cherchez le déménageur qui suggère les meilleurs offres <span class="label label-default">qualité / prix</span>    </h4>
@@ -315,7 +314,7 @@ include_once './menu/navigation.php';
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./dist/js/holder.js"></script>
     </body>
 </html>

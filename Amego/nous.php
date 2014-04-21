@@ -51,7 +51,7 @@ include_once './menu/navigation.php';
             <div class="row">
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>quiSommeNous.jpg">
+                    <img class="img-responsive" src="./images/quiSommeNous.jpg">
                 </div>
                 <div class="col-md-6">
                     <h2>AMEGO déménagement</h2>
@@ -70,42 +70,42 @@ include_once './menu/navigation.php';
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person1.jpg">
+                    <img class="img-responsive" src="./images/person1.jpg">
                     <h3>Pierre Haski 
                         <small>Président</small>
                     </h3>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person2.jpg">
+                    <img class="img-responsive" src="./images/person2.jpg">
                     <h3>Laurent Mauriac
                         <small>Vice directeur</small>
                     </h3>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person3.jpg">
+                    <img class="img-responsive" src="./images/person3.jpg">
                     <h3>Pierre Riché
                         <small>Technicienne</small>
                     </h3>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person4.jpg">
+                    <img class="img-responsive" src="./images/person4.jpg">
                     <h3>Yann Guégan
                         <small>Permanent</small>
                     </h3>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person5.jpg">
+                    <img class="img-responsive" src="./images/person5.jpg">
                     <h3>Ramsès Kefi.
                         <small>Permanent</small>
                     </h3>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person6.png">
+                    <img class="img-responsive" src="./images/person6.png">
                     <h3>Clément Guillou
                         <small>Permanent</small>
                     </h3>
@@ -124,8 +124,8 @@ include_once './menu/navigation.php';
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./dist/js/holder.js"></script>
 
     </body>
 

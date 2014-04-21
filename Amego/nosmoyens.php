@@ -14,7 +14,7 @@ include_once './config/config.php';
         <title>Calcule du volume</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -51,8 +51,8 @@ include_once './config/config.php';
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+        <script src="./dist/js/bootstrap.min.js"></script>
+        <script src="./dist/js/holder.js"></script>
 
     </body>
 

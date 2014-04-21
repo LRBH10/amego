@@ -11,14 +11,14 @@ include_once 'config/config.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
+        <link rel="shortcut icon" href="./images/favicon.png">
 
         <title>Devi déménagement</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap theme -->
-        <link href="<?php echo RESOURCESITE; ?>css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
 
@@ -235,7 +235,7 @@ include_once 'config/config.php';
             ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
-            <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
+            <script src="./dist/js/bootstrap.min.js"></script>
+            <script src="./dist/js/holder.js"></script>
 
     </body></html>
