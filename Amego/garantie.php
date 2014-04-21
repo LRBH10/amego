@@ -11,7 +11,10 @@ include_once './menu/navigation.php';
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Garantie</title>
+        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
+        
+        <title>Garanties</title>
 
         <!-- Bootstrap core CSS -->
         <link href="dist/css/bootstrap.css" rel="stylesheet">
@@ -82,19 +85,9 @@ include_once './menu/navigation.php';
             </div>            
                
 
-            <div class="container">
-
-                <hr>
-
-                <footer>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright &copy; AMEGO 2014</p>
-                        </div>
-                    </div>
-                </footer>
-
-            </div>
+            <?php
+                    include './menu/footer.php';
+            ?>
         </div>
     <!--container -->
 

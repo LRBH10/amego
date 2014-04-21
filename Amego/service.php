@@ -13,7 +13,10 @@ include_once 'config/config.php';
         <meta name="author" content="">
         <link rel="shortcut icon" href="<?php echo IMAGESITE; ?>favicon.png">
 
-        <title>Contact</title>
+        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
+        
+        <title>Services </title>
 
         <!-- Bootstrap core CSS -->
         <link href="<?php echo RESOURCESITE; ?>css/bootstrap.min.css" rel="stylesheet">

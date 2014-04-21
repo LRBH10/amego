@@ -9,7 +9,10 @@ include_once './menu/navigation.php';
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Contact - Modern Business - Start Bootstrap Template</title>
+        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
+        
+        <title>Contact </title>
 
         <!-- Bootstrap core CSS -->
         <link href="dist/css/bootstrap.css" rel="stylesheet">

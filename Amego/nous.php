@@ -9,7 +9,10 @@ include_once './menu/navigation.php';
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="LRBH10">
+
+        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
 
         <title>Qui sommes nous</title>
 
@@ -67,132 +70,56 @@ include_once './menu/navigation.php';
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne1.jpg">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person1.jpg">
                     <h3>Pierre Haski 
                         <small>Président</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne2.jpg">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person2.jpg">
                     <h3>Laurent Mauriac
                         <small>Vice directeur</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne3.jpg">
-                    <h3>Marianne Riché
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person3.jpg">
+                    <h3>Pierre Riché
                         <small>Technicienne</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne4.jpg">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person4.jpg">
                     <h3>Yann Guégan
                         <small>Permanent</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne5.jpg">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person5.jpg">
                     <h3>Ramsès Kefi.
                         <small>Permanent</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>personne6.jpg">
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>person6.png">
                     <h3>Clément Guillou
                         <small>Permanent</small>
                     </h3>
-                    <p>Qu'est-ce qu'il fait? En quelques mots! Ajouter des liens facebook etc!</p>
-                    <ul class="list-unstyled list-inline list-social-icons">
-                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                        </li>
-                    </ul>
                 </div>
 
             </div>
 
-                     
 
-            <div class="container">
 
-                <hr>
-
-                <footer>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright &copy; AMEGO 2014</p>
-                        </div>
-                    </div>
-                </footer>
-
-            </div>
+            <?php
+            include './menu/footer.php';
+            ?>
         </div>
-    <!--container -->
+        <!--container -->
 
         <!-- JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->

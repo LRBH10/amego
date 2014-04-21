@@ -10,8 +10,11 @@ include_once './menu/navigation.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Amego Demenagement">
-        <meta name="author" content="LAOUADI Rabah">
+        <meta name="author" content="LRBH10">
 
+        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
+        
         <title> 
             <?php
             if (isset($_GET['where'])) {
@@ -95,7 +98,7 @@ include_once './menu/navigation.php';
                             
                         </div>
                         <div class="col-md-3">
-                            <img class=" animated slideInRight delay-4" width="281px" height="179px" src="./images/index/assurances.jpg" />
+                            <img class=" animated slideInRight delay-4" width="250px" height="250px" src="./images/index/assurance2.png" />
                         </div>
                     </div>
                 </div>
@@ -118,7 +121,7 @@ include_once './menu/navigation.php';
                     <div class="col-lg-4">                    
                         <h3><i class="fa fa-check-circle"></i> Formules adaptées</h3>
                         <div class="col-md-4">
-                            <img src="<?php echo IMAGESITE; ?>adapter.png" alt="image" class="img-thumbnail">                        
+                            <img src="./images/index/adapter.png" alt="image" class="img-thumbnail">                        
                         </div>
                         <div class="col-md-8">
                             <p>Nos formules sont adaptées à vos besoins. De la formule économique à la luxe, sans oublier la formule standard.</p>
@@ -128,7 +131,7 @@ include_once './menu/navigation.php';
                     <div class="col-lg-4">                    
                         <h3><i class="fa fa-check-circle"></i> Paiement facilité</h3>
                         <div class="col-lg-4">
-                            <img src="<?php echo IMAGESITE; ?>tpe.png" alt="image" class="img-thumbnail">                        
+                            <img src="./images/index/tpe.png" alt="image" class="img-thumbnail">                        
                         </div>
                         <div class="col-lg-7">
                             <p>Possibilité de payer en 3x sans frais. <br/>Paiement par carte bancaire</p>
@@ -138,7 +141,7 @@ include_once './menu/navigation.php';
                     <div class="col-lg-4">
                         <h3><i class="fa fa-check-circle"></i> Devis Gratuit</h3>
                         <div class="col-lg-4">
-                            <img src="<?php echo IMAGESITE; ?>devis_gratuit.png" alt="image" class="img-thumbnail">                        
+                            <img src="./images/index/devis_gratuit.png" alt="image" class="img-thumbnail">                        
                         </div>
                         <div class="col-lg-7">
                             <p>Demandez-nous un devis gratuit et personnalisé. Votre devis en moins de 24 heures.</p>
@@ -184,33 +187,33 @@ include_once './menu/navigation.php';
                         <hr>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur1.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur1.jpg">
+                        <a href="./images/index/demenageur1.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur1.jpg">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur2.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur2.jpg">
+                        <a href="./images/index/demenageur2.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur2.jpg">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur3.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur3.jpg">
+                        <a href="./images/index/demenageur3.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur3.jpg">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur4.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur4.jpg">
+                        <a href="./images/index/demenageur4.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur4.jpg">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur5.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur5.jpg">
+                        <a href="./images/index/demenageur5.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur5.jpg">
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
-                        <a href="<?php echo IMAGESITE; ?>demenageur6.jpg">
-                            <img class="img-responsive img-home-portfolio" src="<?php echo IMAGESITE; ?>demenageur6.jpg">
+                        <a href="./images/index/demenageur6.jpg">
+                            <img class="img-responsive img-home-portfolio" src="./images/index/demenageur6.jpg">
                         </a>
                     </div>
                 </div>
