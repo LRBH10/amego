@@ -17,9 +17,7 @@ include_once './config/config.php';
         <link href="<?php echo RESOURCESITE; ?>css/bootstrap.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
-        <link href="<?php echo RESOURCESITE; ?>css/modern-business.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="<?php echo RESOURCESITE; ?>css/imageflow.css" type="text/css" />
     </head>
 
     <body>
@@ -28,33 +26,26 @@ include_once './config/config.php';
         include './menu/header.php';
         ?>
 
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-12">
-                    <h1 class="page-header">Nos Moyens 
-                        <small>utilisés pour votre confort</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="index.php">Accueil</a>
-                        </li>
-                        <li class="active">Calcule du volume</li>
-                    </ol>
-                </div>
-
+        <section class="container" role="navigation">
+            <div class="col-lg-12">
+                <h1 class="page-header">Nos Moyens 
+                    <small>utilisés pour votre confort</small>
+                </h1>
             </div>
+            <ol class="breadcrumb">
+                <li><a href="index.php">Accueil</a>
+                </li>
+                <li class="active">Nos Moyens</li>
+            </ol>
+        </section>>
 
-            <h1> En Construction </h1>
 
 
+        <section class="container" role="main"> 
+            <iframe class="col-lg-12" height="1200px" src='http://www.fmd-sa.com/catalogue/1/caisses-cartons'></iframe>
+        </section>
 
-            <div id="unique_name" class="imageflow"> 
-                <img src="images/chaise.jpg" longdesc="#" width="50" height="50" alt="Text_1" />
-                <img src="images/bureau.jpg" longdesc="#" width="50" height="50" alt="Text_2" />
-                <img src="images/buffet.jpg" longdesc="#" width="50" height="50" alt="Text_3" />
-            </div>
 
-        </div>
 
         <!-- JavaScript -->
         <!-- JavaScript -->
@@ -62,15 +53,6 @@ include_once './config/config.php';
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="<?php echo RESOURCESITE; ?>js/bootstrap.min.js"></script>
         <script src="<?php echo RESOURCESITE; ?>js/holder.js"></script>
-        <script src="<?php echo RESOURCESITE; ?>js/imageflow.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            domReady(function()
-            {
-                var instanceOne = new ImageFlow();
-                instanceOne.init({ImageFlowID: 'unique_name'});
-                instanceOne.seal(true);
-            });
-        </script>
 
     </body>
 

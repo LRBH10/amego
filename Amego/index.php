@@ -55,49 +55,49 @@ include_once './menu/navigation.php';
             <div class="carousel-inner">
                 <div class="item active ">
                     <div  class="row container top-buffer">
-                        <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 ">
+                        <div class="col-lg-offset-3 col-lg-7 col-md-offset-1 col-md-6 ">
                             <div class=" animated slideInDown delay-2">
                                 <h3> Vous voulez  déménager ?   </h3>
-                                <h4> Vous chercher le déménageur qui offre meilleur  <span class="label label-default">qualité / prix</span>    </h4>
-                                <h4> Simulez combien ça vous coûtera ou demander un devis gratuit </h4>
+                                <h4> Vous cherchez le déménageur qui suggère les meilleurs offres <span class="label label-default">qualité / prix</span>    </h4>
+                                <h4> Estimez combien ça vous coûtera et demandez un devis gratuit </h4>
                             </div>
                             <div class=" animated slideInLeft delay-3">
-                                <a href="volume.php" class="btn  btn-primary "> Simuler Votre déménegament et Demander un devis </a> 
+                                <a href="volume.php" class="btn  btn-primary "> Estimez votre déménegament et Demandez un devis </a> 
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-2 col-md-3">
                             <img class=" animated slideInRight delay-4" width="400px" height="200px" src="./images/index/camion1.png" />
                         </div>
                     </div>
                 </div>
                 <div class="item "> 
                     <div  class="row ">
-                        <div class=" col-md-offset-1 col-md-6 top-buffer ">
+                        <div class="col-lg-offset-2 col-lg-6 col-md-offset-1 col-md-6 top-buffer ">
                             <div class=" animated slideInDown delay-2">
-                                <h3> Vous avez des  suggestions precises pour votre déménegement   </h3>
-                                <h4> Nous mettrons toutes <span class="label label-default">notre experience et notre savoir faire </span> pour vous satisfaire  </h4>
-                                <h4> Vous pouvez  demander un devis gratuit et nous vous rappalerons dans les plus bref delai pour en discuter d'avantage</h4>
+                                <h3> Vous avez des  suggestions precises pour votre déménagement   </h3>
+                                <h4> Nous mettrons toutes <span class="label label-default">nos experiences et notre savoir faire </span> pour vous satisfaire  </h4>
+                                <h4> Vous pouvez  demander un devis gratuit et nous vous rappellerons dans les plus bref delais pour en discuter d'avantage</h4>
                             </div>
                             <div class=" animated slideInLeft delay-3">
-                                <a href="./devis.php" class="btn  btn-primary "> Demander un devis   </a>
+                                <a href="./devis.php" class="btn  btn-primary "> Demandez un devis   </a>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-2 col-md-3">
                             <img class=" animated slideInRight delay-4" width="300px" height="317px" src="./images/index/experiance2.png" />
                         </div>
                     </div>
                 </div>
                 <div class="item">
                      <div  class="row top-buffer">
-                        <div class=" col-md-offset-1 col-md-6  ">
+                        <div class="col-lg-offset-2 col-lg-6 col-md-offset-1 col-md-6  ">
                             <div class=" animated slideInDown delay-2">
                                 <h3> Vous avez des  objets précieux ou fragiles  </h3>
-                                <h4> Et vous avez <span class="label label-default">peur de les perdres ou qu'ils se cassent </span>   </h4>
-                                <h4> Nous partenaire d'assurance sont les garant de vos objets </h4>
+                                <h4> Et vous avez <span class="label label-default"> peur de les perdres ou qu'ils se cassent </span>   </h4>
+                                <h4> Nos partenaires d'assurance sont les garants de vos objets </h4>
                             </div>
                             
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-2 col-md-3">
                             <img class=" animated slideInRight delay-4" width="250px" height="250px" src="./images/index/assurance2.png" />
                         </div>
                     </div>
@@ -134,7 +134,7 @@ include_once './menu/navigation.php';
                             <img src="./images/index/tpe.png" alt="image" class="img-thumbnail">                        
                         </div>
                         <div class="col-lg-7">
-                            <p>Possibilité de payer en 3x sans frais. <br/>Paiement par carte bancaire</p>
+                            <p>Possibilité de payer en 3x sans interêts. <br/>Paiement par carte bancaire</p>
                         </div>
                         <a class="btn btn-sm btn-primary pull-left btn-block" href="devis.php">Plus d'information >></a>
                     </div>
@@ -164,7 +164,9 @@ include_once './menu/navigation.php';
                 <div class="row">
                     <div class="col-lg-12">
                         <h2>Vous souhaitez comparer?</h2>
-                        <p>Un peu de stress? Changer de lieu de vie, d'environnement, peut parfois être angoissant. Pourtant,il suffit souvent de bien s'y préparer et d'être entouré de bons conseils. AMEGO Déménagement possède l'expérience nécessaire, l'équipe saura vous conseiller et vous apporter les bonnes informations. Le choix d'un bon professionnel vous permettra de déménager en toute sérénité.</p>
+                        <p>Un peu de stress? Changer de lieu de vie, d'environnement, peut parfois être angoissant. Pourtant,il suffit souvent de bien s'y préparer et d'être entouré par de bons conseillers.<br/> 
+                            AMEGO Déménagement possède l'expérience nécessaire, l'équipe saura vous conseiller et vous apporter les bonnes informations. <br>
+                            Le choix d'un bon professionnel vous permettra de déménager en toute sérénité.</p>
                         <p>Demandez un <a href="devis.php">devis déménagement </a>! La société AMEGO vous propose une première évaluation en ligne.</p>
                         <hr>
                     </div>

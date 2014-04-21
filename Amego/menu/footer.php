@@ -5,7 +5,8 @@
     <hr class="featurette-divider">
     <div class="footeramego well">
         <p>
-            Pour votre information les demenageurs AMEGO situés à <a href="index.php?where=PARIS"> Paris (75)</a> interviennent essentiellemement dans les départements d'<a href="index.php?where=Ile De France"> Ile De France </a>: 
+            Pour votre information les déménageurs AMEGO sont situés à <a href="index.php?where=PARIS"> Paris (75)</a> et 
+            interviennent essentiellemement dans les départements d'<a href="index.php?where=Ile De France"> Ile De France </a>: 
             <a href="index.php?where=Yvelines">Yvelines (78)</a>,
             <a href="index.php?where=Hauts De Seine"> Hauts De Seine (92)</a>,
             <a href="index.php?where=Seine ST Denis"> Seine ST Denis (93)</a>,

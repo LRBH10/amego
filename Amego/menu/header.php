@@ -45,11 +45,11 @@
                         <li><a href="<?php echo ROOTSITE; ?>devis.php">Devis déménagement</a></li>
                         <li><a href="<?php echo ROOTSITE; ?>volume.php">Calcule du Volume</a></li>
                         <li><a href="<?php echo ROOTSITE; ?>conseils.php">Conseils</a></li>
+                        <li><a href="<?php echo ROOTSITE; ?>nosmoyens.php">Nos Moyens</a></li>
                     </ul>
                 </li>           
 
                 <li><a href="<?php echo ROOTSITE; ?>garantie.php">Garanties</a></li>
-                <li><a href="<?php echo ROOTSITE; ?>nosmoyens.php">Nos Moyens</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>nous.php">Qui Somme Nous</a></li>
                 <li><a href="<?php echo ROOTSITE; ?>contact.php">Nous Contactez</a></li>
             </ul>

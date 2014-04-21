@@ -122,7 +122,8 @@ include_once './menu/navigation.php';
             <div class="row">
 
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>devis.png">
+                    Rabah
+                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>devis.png" />
                 </div>
 
             </div>

@@ -35,13 +35,13 @@ include_once './config/config.php';
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Calcule 
-                        <small>du volume</small>
+                    <h1 class="page-header">Calcul du volume
+                        <small> de votre déménagement </small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="index.php">Accueil</a>
                         </li>
-                        <li class="active">Calcule du volume</li>
+                        <li class="active">Calcul du volume</li>
                     </ol>
                 </div>
 
@@ -55,9 +55,9 @@ include_once './config/config.php';
 
                 <div class="col-md-6">
                     <h2>Calculer le volume de vos biens</h2>
-                    <p>Le calcul du volume par notre calculateur, vous permet d'avoir une idée approximative de votre volume.</p>
-                    <p>En aucun cas il peut être aussi précis qu'un commmercial, car il est difficile pour vous d'estimer le nombre de cartons, et penser à tous les détails (cave ...).</p>
-                    <p>Le calcul du volume nous permet d'avoir une idée approximative de votre volume qui porra servire comme une estimations de la coute totale.</p>
+                    <p>Le calcul du volume par notre simulateur, vous permet d'avoir une idée approximative du volume de votre déménagement.</p>
+                    <p>En aucun cas il ne peut être aussi précis qu'un commmercial, car il est difficile pour vous d'estimer le nombre de cartons, et penser à tous les détails (cave ...).</p>
+                    <p>Le calcul du volume nous permet d'avoir une idée approximative de votre volume qui pourra servir comme une estimations du volume total.</p>
 
                 </div>
                 <div class="col-md-3">
