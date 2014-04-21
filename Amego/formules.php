@@ -36,8 +36,8 @@ include_once './menu/navigation.php';
             <div class="row">
 
                 <div class="col-lg-12">
-                    <h1 class="page-header">Nos packs
-                        <small> et formules demenagement</small>
+                    <h1 class="page-header">Nos formules
+                        <small> de déménagement</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="index.php">Accueil</a>
@@ -51,12 +51,12 @@ include_once './menu/navigation.php';
             <div id="formule_eco" class="row">
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>formuleeco.jpg">
+                    <img class="img-responsive" src="./images/formules/formuleeco.jpg">
                 </div>
                 <div class="col-md-6">                    
 
                     <h2>Formule économique</h2>
-                    <p>La formule déménagement économique, vous permet de bénéficier de nos services à petits prix en participant avant, pendant et après à votre déménagement, par exemple en emballant vos biens (meubles, objets fragiles….) ou le démontage et le remontage de vos meubles.</p>
+                    <p>La formule déménagement économique, vous permet de bénéficier de nos services à petits prix en participant avant, pendant et après  votre déménagement, par exemple en emballant vos biens (meubles, objets fragiles….) ou encore  le démontage et le remontage de vos meubles.</p>
 
                     <h3>Les prestations assurées par la société AMEGO</h3>
 
@@ -97,8 +97,8 @@ include_once './menu/navigation.php';
                     <p><b>Avant votre déménagement :</b></p>
 
                     <ul>
-                        <li>lla logistique de votre déménagement (planning de la préparation, date du déménagement, cubage du camion,…).</li>
-                        <li>les différents matériels dont vous avez besoin pour l'emballage devos biens.</li>
+                        <li>la logistique de votre déménagement (planning de la préparation, date du déménagement, cubage du camion,…).</li>
+                        <li>les différents matériels dont vous avez besoin pour l'emballage de vos biens.</li>
                     </ul>
 
                     <p><b>Le jour du déménagement :</b></p>
@@ -119,7 +119,7 @@ include_once './menu/navigation.php';
                 </div>
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>formulestandard.jpg">
+                    <img class="img-responsive" src="./images/formules/formulestandard.jpg">
                 </div>
 
             </div>
@@ -127,13 +127,12 @@ include_once './menu/navigation.php';
             <div id="formule_luxe" class="row">
 
                 <div class="col-md-6">
-                    <img class="img-responsive" src="<?php echo IMAGESITE; ?>formulevip.jpg">
+                    <img class="img-responsive" src="./images/formules/formulevip.jpg">
                 </div>
                 <div class="col-md-6">                    
 
                     <h2>Formule VIP</h2>
-                    <p>LIl s'agit du meilleur en matière de services. L'équipe d'AMEGO se charge de la totalité du travail.</p>
-
+                    <p>Il s'agit du meilleur en matière de services. L'équipe d'AMEGO se charge de la totalité du travail.</p>
 
                     <ul>
                         <li>le chargement et déchargement de la totalité de vos biens sont assurés par nos services.</li>

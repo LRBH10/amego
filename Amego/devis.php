@@ -167,7 +167,7 @@ include_once './menu/navigation.php';
                         <h2>Informations Biens :</h2>
                         <div class="panel panel-warning">
                             <div class="panel-heading">
-                                <h1 class="panel-title">Objects spéciaux et Volume totale</h1>
+                                <h1 class="panel-title">Objects spéciaux et Volume total</h1>
                             </div>
                             <div class="panel-body">
                                 <div class="col-sm-6">
@@ -226,7 +226,7 @@ include_once './menu/navigation.php';
                         <div class="col-lg-6">
                             <div class="panel panel-warning">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title">Arrivé</h1>
+                                    <h1 class="panel-title">Arrivée</h1>
                                 </div>
                                 <div class="panel-body">
                                     <div class="col-sm-12">
@@ -259,7 +259,7 @@ include_once './menu/navigation.php';
                                 <h1 class="panel-title">Commentaire</h1>
                             </div>
                             <div class="panel-body">
-                                <textarea id="devisComment" name="devisComment" class="form-control" rows="8" placeholder="Indiquez dans la case une indication concernant votre demenagement, plus vous donnerez des informations précises, plus le devis de votre demenagement sera précis"></textarea>                   
+                                <textarea id="devisComment" name="devisComment" class="form-control" rows="8" placeholder="Détaillez votre déménagement, plus vous donnerez des informations précises, plus le devis de votre demenagement sera précis"></textarea>                   
                             </div>
                         </div>
                     </div>

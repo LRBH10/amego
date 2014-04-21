@@ -37,7 +37,7 @@ include_once './menu/navigation.php';
 
                 <div class="col-lg-12">
                     <h1 class="page-header">Garanties
-                        <small> assurences</small>
+                        <small> et  assurances</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="index.php">Accueil</a>
@@ -56,7 +56,7 @@ include_once './menu/navigation.php';
                 <div class="col-md-6">                    
                     
                     <h2>L'assurance contractuelle</h2>
-                    <p> Ce type d'assurance assurance incluse d'office dans tout type de contrat. La societe de demenagement dans ce cas est responsable des meubles et objets qui lui sont confiés sauf dans des cas :</P>                   
+                    <p> Ce type d'assurance est inclu d'office dans tout type de contrat. La societe de demenagement dans ce cas est responsable des meubles et objets qui lui sont confiés sauf dans des cas :</P>                   
                     <ul>
                         <li>De force majeure</li>
                         <li>De vol</li>
@@ -65,8 +65,8 @@ include_once './menu/navigation.php';
                     </ul>
                     
                     <p>Dans des cas comme listés ci-dessus notre assureur n'est pas engagé à indemniser le montant de vos préjudices.                  
-                    Ensuite pour que la prise en charge soit effective, il est important de bien remplir le document appellé <b>declaration de biens de valeur</b> et de le remettre à votre société déménagement avant le déménagement.     
-                    Dans la déclaration de valeur vous êtes tenu de lister tous les biens à déménager et de leur donner leur valeur individuelle , sans depasser la valeur maximum individuelle par objet definie dans votre contrat et sans depasser la valeur globale d'assurance definit dans votre contrat (que vous pouvez augmenter si nécessaire). </p>
+                    Ensuite pour que la prise en charge soit effective, il est important de bien remplir le document appellé <b>déclaration de biens de valeur</b> et de le remettre à votre société de déménagement avant le déménagement.     
+                    Dans la déclaration de valeur vous êtes tenu de lister tous les biens à déménager et de leur donner leur valeur individuelle , sans dépasser la valeur maximum individuelle par objet definie dans votre contrat et sans dépasser la valeur globale d'assurance definit dans votre contrat (que vous pourriez augmenter si nécessaire). </p>
                 </div>
             </div>
             
@@ -74,7 +74,7 @@ include_once './menu/navigation.php';
                 <div class="col-md-6">                    
                     
                     <h2>L'assurance dommage</h2>
-                    <p>Dans ce type de contrat la societe de demenagement est responsable de toute avarie ou perte de votre mobilier en cours de demenagement quelque soit les circonstances (cas de force marjeure, incendie ...).</p>        
+                    <p>Dans ce type de contrat la sociéte de déménagement est responsable de toute avarie ou perte de votre mobilier en cours de déménagement quelque soit les circonstances (cas de force marjeure, incendie ...).</p>        
                     <p>Comme pour l'assurance contractuelle, le document "déclaration de biens de valeur" doit être rempli et remis avant le déménagement à la société de déménagement.</p>        
                 </div>
                 
