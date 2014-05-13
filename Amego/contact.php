@@ -38,7 +38,7 @@ include_once './menu/navigation.php';
 
                 <div class="col-lg-12">
                     <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=paris&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=60.116586,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Paris,+%C3%8Ele-de-France,+France&amp;t=m&amp;ll=48.860085,2.353134&amp;spn=0.039528,0.072956&amp;z=13&amp;output=embed"></iframe>
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?q=20+avenue+Albert+Einstein,le+blanc+mesnil,+93150+ile+de+france&amp;ie=UTF8&amp;hq=&amp;hnear=20+Avenue+Albert+Einstein,+93150+Le+Blanc-Mesnil&amp;gl=fr&amp;t=m&amp;z=14&amp;ll=48.944157,2.471106&amp;output=embed"></iframe>
                 </div>
 
             </div>
@@ -80,11 +80,13 @@ include_once './menu/navigation.php';
                 <address class="col-sm-4">
                     <h3>AMEGO Déménagement</h3>
                     <p>
-                        7, Rue Gauthey <br>
-                        Paris, 75017<br>
+                    20 avenue Albert Einstein, <br>
+                        le blanc mesnil, 93150<br>
+                        ile de france
                     </p>
-                    <p><span class="glyphicon glyphicon-phone-alt"></span> <abbr title="Phone">P</abbr>: +33 (0)1 42 26 52 20</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span> <abbr title="Email">E</abbr>: <a href="mailto:feedback@startbootstrap.com">contact@amego.fr</a></p>
+
+                    <p><span class="glyphicon glyphicon-phone-alt"></span> <abbr title="Phone">P</abbr>: +33 (0)1 48 67 29 41</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> <abbr title="Email">E</abbr>: <a href="mailto:contact@amego-demenagement.com">contact@amego-demenagement.com</a></p>
                     <p><span class="glyphicon glyphicon-time"></span> <abbr title="Hours">H</abbr>: Lundi - Vendredi: 8:00  à 19:00 </p>
                     <!--ul class="list-unstyled list-inline list-social-icons">
                         <li class="tooltip-social facebook-link"><a href="#facebook-page" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>

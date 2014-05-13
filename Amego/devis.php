@@ -14,7 +14,7 @@ include_once './menu/navigation.php';
         <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
         <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
 
-        <title>Conseil</title>
+        <title>Demande de Devis Gratuit</title>
 
         <!-- Bootstrap core CSS -->
 
@@ -120,11 +120,17 @@ include_once './menu/navigation.php';
             <!-- /.row -->
 
             <div class="row">
-
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="./images/devis.png" />
+            
+                <div class="col-lg-6">
+                        <img class="img-responsive" src="./images/devis/devis.jpg" />
                 </div>
-
+                <div class="col-lg-6">
+                        <div class=" animated slideInDown delay-2">
+                                <h3> Vous voulez  déménager ?   </h3>
+                                <h4> Donnez nous quelques informations, Nous vous recontacterons dans les plus brefs delais    </h4>                            
+                        </div>
+                </div>
+                
             </div>
             <!-- /.row -->
 
@@ -158,7 +164,7 @@ include_once './menu/navigation.php';
                                     <input type="email" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email" 
                                            data-error="L'adresse e-mail n'est pas valide" required>
                                 </div>                
-                            </div>
+                           </div>
                         </div>
                     </div>
 

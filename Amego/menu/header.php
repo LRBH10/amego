@@ -45,12 +45,12 @@
                         <li><a href="./devis.php">Devis déménagement</a></li>
                         <li><a href="./volume.php">Calcule du Volume</a></li>
                         <li><a href="./conseils.php">Conseils</a></li>
-                        <li><a href="./nosmoyens.php">Nos Moyens</a></li>
+                        <!--li><a href="./nosmoyens.php">Nos Moyens</a></li-->
                     </ul>
                 </li>           
 
                 <li><a href="./garantie.php">Garanties</a></li>
-                <li><a href="./nous.php">Qui Somme Nous</a></li>
+                <!--li><a href="./nous.php">Qui Somme Nous</a></li-->
                 <li><a href="./contact.php">Nous Contactez</a></li>
             </ul>
         </div><!--/.nav-collapse -->

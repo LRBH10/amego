@@ -125,7 +125,7 @@ include_once './menu/navigation.php';
                         <div class="col-md-8">
                             <p>Nos formules sont adaptées à vos besoins. De la formule économique à la luxe, sans oublier la formule standard.</p>
                         </div> 
-                        <a class="btn btn-sm btn-primary pull-left btn-block" href="service.php">Plus d'information >></a>                   
+                        <a class="btn btn-sm btn-primary pull-left btn-block" href="formules.php">Plus d'information >></a>                   
                     </div>
                     <div class="col-lg-4">                    
                         <h3><i class="fa fa-check-circle"></i> Paiement facilité</h3>
@@ -226,7 +226,7 @@ include_once './menu/navigation.php';
         </div>
         <!-- /.section -->
 
-        <div class="section-colored">
+        <!--div class="section-colored">
 
             <div class="container">
 
@@ -249,15 +249,14 @@ include_once './menu/navigation.php';
                         </div>
                     </div>
                 </div>
-                <!-- /.row -->
+               
 
             </div>
-            <!-- /.container -->
 
         </div>
         <!-- /.section-colored -->
 
-        <div class="section">
+        <!--div class="section">
 
             <div class="container">
 
@@ -280,10 +279,10 @@ include_once './menu/navigation.php';
                         </ul>
                     </div>
                 </div>
-                <!-- /.row -->
+
 
             </div>
-            <!-- /.container -->
+
 
         </div>
         <!-- /.section -->

@@ -66,12 +66,11 @@ include_once './menu/navigation.php';
                 $mail = new PHPMailer();
                 $mail->IsHTML(true);
                 $mail->CharSet = "utf-8";
-                $mail->SetFrom('adresse-mail@gmail.com', 'Expéditeur AMEGO');
+                $mail->SetFrom('contact@amego-demenagement.com', 'Expéditeur AMEGO');
                 $mail->Subject = "[Contact avec un client]";
 
                 $mail->Body = $message;
-                $mail->AddAddress('blaze_nastov@hotmail.com');
-
+                $mail->AddAddress('contact@amego-demenagement.com');
                 if (!$mail->Send()) {
                     echo '<h2>Votre message n\'a pas été envoyée</h2>';
 //        echo 'Mailer Error: ' . $mail->ErrorInfo;
@@ -134,12 +133,11 @@ include_once './menu/navigation.php';
                 $mail = new PHPMailer();
                 $mail->IsHTML(true);
                 $mail->CharSet = "utf-8";
-                $mail->SetFrom('adresse-mail@gmail.com', 'Expéditeur AMEGO');
+                $mail->SetFrom('contact@amego-demenagement.com', 'Expéditeur AMEGO');
                 $mail->Subject = "[Demande de Devis déménagement] " . $date;
 
                 $mail->Body = $message;
-                $mail->AddAddress('blaze_nastov@hotmail.com');
-
+                $mail->AddAddress('contact@amego-demenagement.com');
                 if (!$mail->Send()) {
                     echo '<h2>Votre message n\'a pas été envoyée</h2>';
 //        echo 'Mailer Error: ' . $mail->ErrorInfo;
