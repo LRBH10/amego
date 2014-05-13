@@ -17,13 +17,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.php">AMEGO DEMENAGEMENT
-                <?php
-                if (isset($_GET['where'])) {
-                    $var = $_GET['where'];
-                    echo ' sur <span class="badgesize badge">' . $var . ' </span>';
-                }
+
+            <?php
+            if (isset($_GET['where'])) {
+                $var = $_GET['where'];
+                echo '<a class="navbar-brand" href="./index.php?where='.$var.'"> DEMENAGEMENT <span class="badgesize badge">' . $var . ' </span></a>';
+            } else {
                 ?>
+                <a class="navbar-brand" href="./index.php">AMEGO DEMENAGEMENT</a>               
+                <?php
+            }
+            ?>
 
             </a>
         </div>

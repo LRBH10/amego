@@ -14,14 +14,15 @@ include_once './menu/navigation.php';
         <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
         <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
 
-        <title>Demande de Devis Gratuit</title>
+        <title>Conseil</title>
 
         <!-- Bootstrap core CSS -->
 
         <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
+        <link href="./dist/css/animated.css" rel="stylesheet">
         <!-- Add custom CSS here -->
-        <link href="./dist/css/modern-business.css" rel="stylesheet">
+
         <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
         <script>
@@ -120,17 +121,17 @@ include_once './menu/navigation.php';
             <!-- /.row -->
 
             <div class="row">
-            
-                <div class="col-lg-6">
-                        <img class="img-responsive" src="./images/devis/devis.jpg" />
+
+                <div class="col-lg-7">
+
+                    <h2 class=" animated slideInDown delay-1 top-buffer"> Demandez un devis gratuit chez AMEGO </h2> 
+                    <h4 class=" animated slideInLeft delay-3 top-buffer"> Vous pouvez  demander un devis gratuit et nous vous rappellerons dans les plus bref delais pour en discuter d'avantage</h4>
+
                 </div>
-                <div class="col-lg-6">
-                        <div class=" animated slideInDown delay-2">
-                                <h3> Vous voulez  déménager ?   </h3>
-                                <h4> Donnez nous quelques informations, Nous vous recontacterons dans les plus brefs delais    </h4>                            
-                        </div>
+                <div class="col-lg-3">
+                    <img  height="350px" src="./images/devis/devis.jpg" />
                 </div>
-                
+
             </div>
             <!-- /.row -->
 
@@ -164,7 +165,7 @@ include_once './menu/navigation.php';
                                     <input type="email" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email" 
                                            data-error="L'adresse e-mail n'est pas valide" required>
                                 </div>                
-                           </div>
+                            </div>
                         </div>
                     </div>
 
