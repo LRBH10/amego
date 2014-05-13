@@ -54,7 +54,10 @@ include_once './menu/navigation.php';
             <div class="carousel-inner">
                 <div class="item active ">
                     <div  class="row container top-buffer">
-                        <div class="col-lg-offset-2 col-lg-6 col-md-offset-1 col-md-6 ">
+                        <div class=" col-lg-3  col-md-3">
+                            
+                        </div>
+                        <div class=" col-lg-6  col-md-5 ">
                             <div class=" animated slideInDown delay-2">
                                 <h3> Vous voulez  déménager ?   </h3>
                                 <h4> Vous cherchez le déménageur qui suggère les meilleurs offres <span class="label label-default">qualité / prix</span>    </h4>
