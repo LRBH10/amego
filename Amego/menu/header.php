@@ -21,7 +21,7 @@
             <?php
             if (isset($_GET['where'])) {
                 $var = $_GET['where'];
-                echo '<a class="navbar-brand" href="./index.php?where='.$var.'"> DEMENAGEMENT <span class="badgesize badge">' . $var . ' </span></a>';
+                echo '<a class="navbar-brand" href="./index.php?where=' . $var . '"> DEMENAGEMENT <span class="badgesize badge">' . $var . ' </span></a>';
             } else {
                 ?>
                 <a class="navbar-brand" href="./index.php">AMEGO DEMENAGEMENT</a>               
@@ -51,8 +51,18 @@
                         <li><a href="./conseils.php">Conseils</a></li>
                         <!--li><a href="./nosmoyens.php">Nos Moyens</a></li-->
                     </ul>
-                </li>           
+                </li>    
 
+                <!--li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Garde/Monte Meuble <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./garde_meuble.php">Garde Meuble</a></li>
+                        <li><a href="./monte_meuble.php">Monte Meuble</a></li>
+                    </ul>
+                </li-->           
+
+                <li><a href="./garde_meuble.php">Garde Meuble</a></li>
+                <li><a href="./monte_meuble.php">Monte Meuble</a></li>
                 <li><a href="./garantie.php">Garanties</a></li>
                 <!--li><a href="./nous.php">Qui Somme Nous</a></li-->
                 <li><a href="./contact.php">Nous Contactez</a></li>
