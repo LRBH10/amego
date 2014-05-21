@@ -132,3 +132,28 @@ footer {
         /* increases the carousel height so it looks good on phones */
     }
 }
+
+
+
+
+.vspace50 {
+    padding-top: 50px;
+}
+.vspace40 {
+    padding-top: 40px;
+}
+.vspace30 {
+    padding-top: 30px;
+}
+
+.vspace20 {
+    padding-top: 20px;
+}
+.vspace10 {
+    padding-top: 10px;
+}
+
+
+.vspace5 {
+    padding-top: 5px;
+}

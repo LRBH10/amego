@@ -62,8 +62,8 @@ include_once './menu/navigation.php';
 
                 </div>
             </section>
-
-            <section  class="row">                
+            <br>
+            <section  class="row vspace40">                
                 <div class="col-md-6">                    
 
                     <h2>Caractéristiques </h2>
@@ -86,33 +86,32 @@ include_once './menu/navigation.php';
 
 
 
-            <section class="panel panel-default">
-                <!-- Default panel contents -->
+            <!--section class=" panel panel-default">
                 <div class="panel-heading"><center><h1><span class="label label-default">Tarifs de notre garde-meubles</span></h1></center></div>
 
-                <!-- Table -->
                 <div class="row">
-                <center>
-                    <table class="col-lg-offset-4 col-lg-4 table table-striped">
-                        <tr>
-                            <th><span class="label label-warning">Cubage	 </span></th>
-                            <th><center><span class="label label-success">Prix</span></center></th> 
-                        </tr>
+                    <div class="col-lg-offset-4 col-lg-4">
+                        <center>
+                            <table class=" table table-bordered">
+                                <tr>
+                                    <th><span class="label label-warning">Cubage	 </span></th>
+                                    <th><center><span class="label label-success">Prix</span></center></th> 
+                                </tr>
 
-                        <tr>
-                            <td>2 <strong>m³</strong></td>
-                            <td><center>40 <span class="glyphicon glyphicon-euro"></span></center></td> 
+                                <tr>
+                                    <td>2 <strong>m³</strong></td>
+                                    <td><center>40 <span class="glyphicon glyphicon-euro"></span></center></td> 
 
-                        </tr>
+                                </tr>
 
 
-                    </table>
-                </center>
+                            </table>
+                        </center>
                     </div>
+                </div>
 
-                <!-- FOOTER -->
-
-            </section>
+                
+            </section-->
 
 
             <?php

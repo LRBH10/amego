@@ -16,7 +16,7 @@ include_once './config/config.php';
         <title>Calcule du volume</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="./dist/css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
         <link href="./dist/css/modern-business.css" rel="stylesheet">

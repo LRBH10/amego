@@ -18,7 +18,7 @@ include_once './menu/navigation.php';
 
         <!-- Bootstrap core CSS -->
 
-        <link href="./dist/css/bootstrap.css" rel="stylesheet">
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Add custom CSS here -->
         <link href="./dist/css/modern-business.css" rel="stylesheet">
