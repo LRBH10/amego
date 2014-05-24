@@ -34,11 +34,11 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">                
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Les formules <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Les Formules <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="./formules.php#formule_eco">Formule économique</a></li>
                         <li><a href="./formules.php#formule_standard">Formule standard</a></li>
-                        <li><a href="./formules.php#formule_luxe">Formule luxe</a></li>
+                        <li><a href="./formules.php#formule_luxe">Formule Complète</a></li>
                         <li><a href="./formules.php#comparaisons">Comparaisons</a></li>
                     </ul>
                 </li>  

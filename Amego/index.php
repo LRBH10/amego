@@ -34,6 +34,11 @@ include_once './menu/navigation.php';
     <link href="./dist/css/animated.css" rel="stylesheet">
     <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+
+    <script language="javascript" type="text/javascript" src="dist/js/raphal.js"></script>
+    <script language="javascript" type="text/javascript" src="dist/js/graphael.js"></script>
+    <script language="javascript" type="text/javascript" src="dist/js/graphal.pie.js"></script>
+
   </head>
 
   <body role="document">
@@ -183,27 +188,42 @@ include_once './menu/navigation.php';
     </div>
     <!-- /.section -->
 
-    <div class="section-colored text-center">
 
-      <div class="container">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Vous souhaitez comparer?</h2>
-            <p>Un peu de stress? Changer de lieu de vie, d'environnement, peut parfois être angoissant. Pourtant,il suffit souvent de bien s'y préparer et d'être entouré par de bons conseillers.<br/> 
-              AMEGO Déménagement possède l'expérience nécessaire, l'équipe saura vous conseiller et vous apporter les bonnes informations. <br>
-              Le choix d'un bon professionnel vous permettra de déménager en toute sérénité.</p>
-            <p>Demandez un <a href="devis.php">devis déménagement </a>! La société AMEGO vous propose une première évaluation en ligne.</p>
-            <hr>
+    <div class="section-colored">
+      <div class=" text-center">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12">
+
+              <p>Un peu de stress? Changer de lieu de vie, d'environnement, peut parfois être angoissant. Pourtant,il suffit souvent de bien s'y préparer et d'être entouré par de bons conseillers.<br/> 
+                AMEGO Déménagement possède l'expérience nécessaire, l'équipe saura vous conseiller et vous apporter les bonnes informations. <br>
+                Le choix d'un bon professionnel vous permettra de déménager en toute sérénité.</p>
+              <p>Demandez un <a href="devis.php">devis déménagement </a>! La société AMEGO vous propose une première évaluation en ligne.</p>
+              <hr>
+            </div>
           </div>
+          <!-- /.row -->
+
         </div>
-        <!-- /.row -->
+        <!-- /.container -->
 
       </div>
-      <!-- /.container -->
-
     </div>
     <!-- /.section-colored -->
+    <div class=" text-center">
+      <h2>Vous souhaitez comparer nos formules?</h2>
+      <div class="container">
+        <?php
+        include './formules/all.php';
+        ?>
+      </div>
+    </div>
+
+
+
 
     <div class="section">
 
@@ -254,9 +274,9 @@ include_once './menu/navigation.php';
     <!-- /.section -->
 
     <!--div class="section-colored">
-
+  
         <div class="container">
-
+  
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <h2>Vidéo de déménagement 1:</h2>
@@ -277,16 +297,16 @@ include_once './menu/navigation.php';
                 </div>
             </div>
            
-
+  
         </div>
-
+  
     </div>
     <!-- /.section-colored -->
 
     <!--div class="section">
-
+  
         <div class="container">
-
+  
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="flex-video widescreen">
@@ -306,11 +326,11 @@ include_once './menu/navigation.php';
                     </ul>
                 </div>
             </div>
-
-
+  
+  
         </div>
-
-
+  
+  
     </div>
     <!-- /.section -->
 

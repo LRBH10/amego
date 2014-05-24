@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    
+    <script language="javascript" type="text/javascript" src="dist/js/raphal.js"></script>
+    <script language="javascript" type="text/javascript" src="dist/js/graphael.js"></script>
+    <script language="javascript" type="text/javascript" src="dist/js/graphal.pie.js"></script>
+
+
+
+  </head>
+
+  <body>
+
+
+
+    <!-- the html element where to put the paper -->
+    <div id="paper1" ></div>
+
+    <!-- a script that create's a paper and a rectangle -->
+    <script type="text/javascript">
+      var paper = Raphael("paper1", 900, 800);
+
+
+      var font = {font:"17px 'Fontin Sans', Fontin-Sans, Cursive",fill:"white"}
+      var font2 = {font:"17px 'Fontin Sans', Fontin-Sans, Cursive",fill:"black"}
+      
+      var pie = paper.piechart(400, 400, 250, [55, 45], {legend: ["A la charge du Client", "A la charge de Amego"],startFromFixedAngle : 90});
+
+
+      var text1  = paper.text(500, 250, "Emballage de la \n vaisselles  fragiles  ").attr( font);
+      var text2  = paper.text(510, 330, "Emballage des \nobjets fragiles\n ( cadre, miroir, tableau ...) ").attr( font);
+      var text3  = paper.text(510, 410, "Emballage integral des\n articles  non  fragiles \n(Linge plier, livres, DVD...)  ").attr( font);
+      var text4  = paper.text(510, 490, "Demontage  des \n meubles imposant \n( lit , dressing, living ...) ").attr( font);
+      
+      
+      
+      var text21  = paper.text(310, 230, "Mise en penderie \nsur cintre  ").attr( font2);
+      var text22  = paper.text(300, 280, "Protection et condition-\nnement  du mobilier").attr( font2);
+      
+      var text23  = paper.text(280, 350, "Protection sous hausse des\n sommiers, matelas,\n canapés, fauteuils ...  ").attr( font2);
+      
+      var text21  = paper.text(280, 420, "Manutention, transport \nencamion capitonné  ").attr( font2);
+      var text21  = paper.text(280, 470, "Démarche pour autorisa-\ntion de stationnement  ").attr( font2);
+      var text21  = paper.text(270, 520, "Livraison des \ncartons + adhesifs  ").attr( font2);
+      
+      
+            
+      pie.hover(function() {
+	this.sector.stop();
+	this.sector.scale(1.1, 1.1, this.cx, this.cy);
+
+	if (this.label) {
+	  this.label[0].stop();
+	  this.label[0].attr({r: 7.5});
+	  this.label[1].attr({"font-weight": 800});
+	}
+      }, function() {
+	this.sector.animate({transform: 's1 1 ' + this.cx + ' ' + this.cy}, 500, "bounce");
+
+	if (this.label) {
+	  this.label[0].animate({r: 5}, 500, "bounce");
+	  this.label[1].attr({"font-weight": 400});
+	}
+      });
+    </script>
+
+
+
+  </body>
+</html>

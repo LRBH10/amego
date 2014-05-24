@@ -118,55 +118,52 @@ include_once './menu/navigation.php';
 
 
 
-      <!--section class=" panel panel-default">
+      <section class=" panel panel-default">
         <div class="panel-heading"><center><h1><span class="label label-default">Tarifs de nos monte-meubles</span></h1></center></div>
 
-        
+
+
+
+        <table class=" table table-bordered">
+          <tr>
+            <th><span class="label label-warning">Type de monte-meubles	 </span></th>
+            <th><center><span class="label label-success">une heure passage</span></center></th> 
+          <th><center><span class="label label-success">Demi-journée 4h</span></center></th> 
+          <th><center><span class="label label-success">Journée complète 8h</span></center></th> 
           
-            
-              <table class=" table table-bordered">
-                <tr>
-                  <th><span class="label label-warning">Type de monte-meubles	 </span></th>
-                  <th><center><span class="label label-success">Passage 1h</span></center></th> 
-                <th><center><span class="label label-success">Demi-journée 4h</span></center></th> 
-                <th><center><span class="label label-success">Journée complète 8h</span></center></th> 
-                <th><center><span class="label label-success">Supplémentaire par étage</span></center></th> 
 
-                </tr>
+          </tr>
 
-                <tr>
-                  <td><center>Auto-porteur</center></td>
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <tr>
+            <td><center>Echelle électrique </center></td>
 
-                </tr>
-                
-                <tr>
-                  <td><center>Le Tracteur</center></td>
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>220 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>240 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>400 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          
 
-                </tr>
-                
-                <tr>
-                  <td><center>Echelle électrique </center></td>
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
-                <td><center>145 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          </tr>
 
-                </tr>
+          <tr>
+            <td><center>Le Tracteur</center></td>
+          <td><center>150 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>220 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>350 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          </tr>
+
+          <tr>
+            <td><center>Auto-porteur</center></td>
+          <td><center>140 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>210 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          <td><center>340 <span class="glyphicon glyphicon-euro"></span> HT</center></td> 
+          </tr>
 
 
-              </table>
-            
+        </table>
 
 
-      </section-->
+
+      </section>
 
 
     </section>
