@@ -25,7 +25,7 @@ include_once './menu/navigation.php';
 
   </head>
 
-  <body>
+  <body itemscope itemtype="http://schema.org/Product">
 
     <?php
     include './menu/header.php';

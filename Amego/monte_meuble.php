@@ -48,7 +48,7 @@ include_once './menu/navigation.php';
 
       </div>
 
-      <div class="row">
+      <div itemscope itemtype="http://schema.org/Product" class="row">
 
         <div class="col-md-6 ">
           <img class="img-responsive" src="./images/meuble/example.JPG">   
@@ -68,7 +68,7 @@ include_once './menu/navigation.php';
       <br>
       <br>
 
-      <div  class="row ">                
+      <div itemscope itemtype="http://schema.org/Product" class="row ">                
         <div class="col-md-6">                    
 
           <h2>L'échelle électrique </h2>
@@ -89,7 +89,7 @@ include_once './menu/navigation.php';
       <br>
       <br>
 
-      <div class="row">
+      <div itemscope itemtype="http://schema.org/Product" class="row">
 
         <div class="col-md-6 ">
           <br>

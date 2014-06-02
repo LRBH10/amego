@@ -33,7 +33,7 @@ function concat(&$amego, &$client,&$deux, $what, $val, $default = 0) {
     <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
     <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
 
-    <title>Conseil</title>
+    <title>Devis Gratuit</title>
 
     <!-- Bootstrap core CSS -->
 
