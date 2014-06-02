@@ -36,6 +36,7 @@ include_once './menu/navigation.php';
       <div class="row">
 
         <div class="col-lg-12">
+          <a href="sitemap.xml"></a>
           <h1 class="page-header">Garde Meuble
             <small> pour votre confort</small>
           </h1>
