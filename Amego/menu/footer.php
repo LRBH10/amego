@@ -1,7 +1,7 @@
 
 
 
-<footer  class="container">
+<footer itemscope itemtype="http://schema.org/WPFooter" class="container">
     <hr class="featurette-divider">
     <div class="footeramego well">
         <p>

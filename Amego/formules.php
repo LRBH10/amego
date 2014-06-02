@@ -64,7 +64,7 @@ and open the template in the editor.
 
 
 
-      <div id="formule_eco" class="row">
+      <div itemscope itemtype="http://schema.org/Product" id="formule_eco" class="row">
 
         <div class="col-md-7"> 
           <?php
@@ -103,7 +103,7 @@ and open the template in the editor.
 
       </div>
 
-      <div id="formule_standard" class="row">                
+      <div itemscope itemtype="http://schema.org/Product" id="formule_standard" class="row">                
         <div class="col-md-5">                    
 
           <h2>Formule standard</h2>
@@ -145,7 +145,7 @@ and open the template in the editor.
 
       </div>
 
-      <div id="formule_luxe" class="row">
+      <div itemscope itemtype="http://schema.org/Product" id="formule_luxe" class="row">
 
         <div class="col-md-7"> 
           <?php

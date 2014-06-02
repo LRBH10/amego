@@ -219,19 +219,26 @@ include_once './menu/navigation.php';
         <?php
         include './formules/all.php';
         ?>
+        
+        <div class="row">
+          <br>
+          <br>
+          <a href="./alacarte.php" class="col-md-offset-2 col-md-8 btn btn-lg btn-primary" > Ou tout simplement créer votre propre formule de déménagement </a>
+        </div>
+        
       </div>
     </div>
 
 
 
 
-    <div class="section">
+    <div itemscope itemtype="http://schema.org/ImageGallery" class="section">
 
       <div class="container">
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2>Asurez-vous de nos services en regardant les photos</h2>
+            <h2>Assurez-vous de nos services en regardant les photos</h2>
             <hr>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6">

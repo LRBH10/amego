@@ -1,43 +1,62 @@
 <?php
 include_once './config/config.php';
 include_once './menu/navigation.php';
+
+function concat(&$amego, &$client,&$deux, $what, $val, $default = 0) {
+  $res = $_POST[$val];
+
+  switch ($res) {
+    case 1:
+      $client = $client . " - ". $what ."\n";
+      break;
+    case 2:
+      $deux = $deux . " - ". $what ."\n";
+      break;
+    case 3:
+      $amego = $amego . " - ". $what ."\n";
+      break;
+    default:
+      break;
+  }
+  
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
-        <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./images/logo/logo50x50.png" type="image/x-icon"/> 
+    <link rel="icon" href="./images/logo/photo.jpg" type="image/x-icon"/>
 
-        <title>Conseil</title>
+    <title>Conseil</title>
 
-        <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS -->
 
-        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <link href="./dist/css/animated.css" rel="stylesheet">
-        <!-- Add custom CSS here -->
+    <link href="./dist/css/animated.css" rel="stylesheet">
+    <!-- Add custom CSS here -->
 
-        <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-        <script>
-            var autocompleteDepart, autocompleteDesct;
+    <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script>
+      var autocompleteDepart, autocompleteDesct;
 
-            function initialize() {
-                // Create the autocomplete object, restricting the search
-                // to geographical location types.
-                autocompleteDepart = new google.maps.places.Autocomplete(
-                        /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDep')),
-                        {types: ['geocode']});
-                autocompleteDesct = new google.maps.places.Autocomplete(
-                        /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDest')),
-                        {types: ['geocode']});
-            }
+      function initialize() {
+        // Create the autocomplete object, restricting the search
+        // to geographical location types.
+        autocompleteDepart = new google.maps.places.Autocomplete(
+                /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDep')),
+                {types: ['geocode']});
+        autocompleteDesct = new google.maps.places.Autocomplete(
+                /** @type {HTMLInputElement} */(document.getElementById('devisAdresseDest')),
+                {types: ['geocode']});
+      }
 
 //            function faireRecapitulatif(){
 //                var nom = document.getElementById("devisNom").value+ ' ' + document.getElementById("devisPrenom").value;
@@ -92,266 +111,300 @@ include_once './menu/navigation.php';
 //                document.getElementById("recComment").innerHTML=comment;
 //                document.getElementById("sendComment").innerHTML=comment;
 //            }
-        </script>
-    </head>
+    </script>
+  </head>
 
-    <body onload="initialize()">
+  <body onload="initialize()" itemscope itemtype="http://schema.org/WebPage">
 
-        <?php
-        include './menu/header.php';
-        ?>
+    <?php
+    include './menu/header.php';
+    ?>
 
-        <!-- Page Content -->
+    <!-- Page Content -->
 
-        <div class="container">            
-            <div class="row">
+    <div class="container">            
+      <div class="row">
 
-                <div class="col-lg-12">
-                    <h1 class="page-header">Devis déménagement
-                        <small> gratuit</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Accueil</a>
-                        </li>
-                        <li class="active">Devis Déménagement</li>
-                    </ol>
+        <div class="col-lg-12">
+          <h1 class="page-header">Devis déménagement
+            <small> gratuit</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Accueil</a>
+            </li>
+            <li class="active">Devis Déménagement</li>
+          </ol>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+        <div class="col-lg-7">
+
+          <h2 class=" animated slideInDown delay-1 top-buffer"> Demandez un devis gratuit chez AMEGO </h2> 
+          <h4 class=" animated slideInLeft delay-3 top-buffer"> Vous pouvez  demander un devis gratuit et nous vous rappellerons dans les plus bref delais pour en discuter d'avantage</h4>
+
+        </div>
+        <div class="col-lg-3">
+          <img  height="350px" src="./images/devis/devis.jpg" />
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+
+      <div class="row">
+        <form data-toggle="validator" method="POST" role="form" action="sendMail.php">
+          <!--        Version 3 -->     
+          <div class="col-lg-6">
+            <h2>Informations Clients :</h2>
+
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h1 class="panel-title">Coordonées personnelles</h1>
+              </div>
+              <div class="panel-body">
+                <div class="form-group col-xs-6">
+                  <label for="devisNom">Nom</label>
+                  <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Votre nom" required>
                 </div>
-
+                <div class="form-group col-xs-6">
+                  <label for="devisPrenom">Prenom</label>
+                  <input type="text" name="devisPrenom" class="form-control" id="devisPrenom" placeholder="Votre prenom" required>
+                </div>
+                <div class="form-group col-xs-6">
+                  <label for="devisTel">Téléphone</label>
+                  <input type="text" name="devisTel" class="form-control" id="devisTel" placeholder="Votre numéro" 
+                         pattern="[0-9]+" maxlength="10" required>
+                </div>
+                <div class="form-group col-xs-6">
+                  <label for="devisMail">E-Mail</label>
+                  <input type="email" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email" 
+                         data-error="L'adresse e-mail n'est pas valide" required>
+                </div>                
+              </div>
             </div>
-            <!-- /.row -->
+          </div>
 
-            <div class="row">
+          <div class="col-lg-6">
+            <h2>Informations Biens :</h2>
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h1 class="panel-title">Objects spéciaux et Volume total</h1>
+              </div>
+              <div class="panel-body">
+                <div class="col-sm-6">
+                  <label for="devisObjetsSpe">Objects spéciaux</label>
+                  <textarea id="devisObjetsSpe" name="devisObjetsSpe" class="form-control" rows="5" placeholder="Précisez ici si vous avez des objets spéciaux"></textarea>
+                </div>                    
+                <div class="form-group col-xs-6">
+                  <label for="devisVolume">Volume</label>
+                  <div class="list-group">
+                    <a href="volume.php" class="list-group-item list-group-item-warning">Calculer le volume</a>
+                  </div>
+                  <input type="text" name="devisVolume" class="form-control" pattern="[0-9]+" id="devisVolume" placeholder="Entrez le volume ici"
+                  <?php
+                  if (isset($_GET['calculatedVolume']))
+                    echo 'value="' . $_GET['calculatedVolume'] . '"';
 
-                <div class="col-lg-7">
-
-                    <h2 class=" animated slideInDown delay-1 top-buffer"> Demandez un devis gratuit chez AMEGO </h2> 
-                    <h4 class=" animated slideInLeft delay-3 top-buffer"> Vous pouvez  demander un devis gratuit et nous vous rappellerons dans les plus bref delais pour en discuter d'avantage</h4>
-
+                  if (isset($_POST['volume']))
+                    echo 'value="' . $_POST['volume'] . '"';
+                  ?> 
+                         required>                        
                 </div>
-                <div class="col-lg-3">
-                    <img  height="350px" src="./images/devis/devis.jpg" />
-                </div>
-
+              </div>
             </div>
-            <!-- /.row -->
+          </div>                
 
 
-            <div class="row">
-                <form data-toggle="validator" method="POST" role="form" action="sendMail.php">
-                    <!--        Version 3 -->     
-                    <div class="col-lg-6">
-                        <h2>Informations Clients :</h2>
-
-                        <div class="panel panel-warning">
-                            <div class="panel-heading">
-                                <h1 class="panel-title">Coordonées personnelles</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class="form-group col-xs-6">
-                                    <label for="devisNom">Nom</label>
-                                    <input type="text" name="devisNom" class="form-control" id="devisNom" placeholder="Votre nom" required>
-                                </div>
-                                <div class="form-group col-xs-6">
-                                    <label for="devisPrenom">Prenom</label>
-                                    <input type="text" name="devisPrenom" class="form-control" id="devisPrenom" placeholder="Votre prenom" required>
-                                </div>
-                                <div class="form-group col-xs-6">
-                                    <label for="devisTel">Téléphone</label>
-                                    <input type="text" name="devisTel" class="form-control" id="devisTel" placeholder="Votre numéro" 
-                                           pattern="[0-9]+" maxlength="10" required>
-                                </div>
-                                <div class="form-group col-xs-6">
-                                    <label for="devisMail">E-Mail</label>
-                                    <input type="email" name="devisMail" class="form-control" id="devisMail" placeholder="Votre email" 
-                                           data-error="L'adresse e-mail n'est pas valide" required>
-                                </div>                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <h2>Informations Biens :</h2>
-                        <div class="panel panel-warning">
-                            <div class="panel-heading">
-                                <h1 class="panel-title">Objects spéciaux et Volume total</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-sm-6">
-                                    <label for="devisObjetsSpe">Objects spéciaux</label>
-                                    <textarea id="devisObjetsSpe" name="devisObjetsSpe" class="form-control" rows="5" placeholder="Précisez ici si vous avez des objets spéciaux"></textarea>
-                                </div>                    
-                                <div class="form-group col-xs-6">
-                                    <label for="devisVolume">Volume</label>
-                                    <div class="list-group">
-                                        <a href="volume.php" class="list-group-item list-group-item-warning">Calculer le volume</a>
-                                    </div>
-                                    <input type="text" name="devisVolume" class="form-control" pattern="[0-9]+" id="devisVolume" placeholder="Entrez le volume ici"
-                                    <?php
-                                    if (isset($_GET['calculatedVolume']))
-                                        echo 'value="' . $_GET['calculatedVolume'] . '"';
-                                    ?> required>                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>                
-
-
-                    <div class="col-lg-12">
-                        <h2>Informations Déménagement :</h2>
-                        <div class="col-lg-6">                        
-                            <div class="panel panel-warning">
-                                <div class="panel-heading">
-                                    <h1 class="panel-title">Départ</h1>
-                                </div>
-                                <div class="panel-body">    
-                                    <div class="col-sm-4">
-                                        <label for="devisDate">Date</label>
-                                        <input type="date" name="devisDate" class="form-control" id="devisDate" required>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <label for="devisRueDep">Adresse</label>
-                                        <input type="text" name="devisAdresseDep" class="form-control" id="devisAdresseDep" placeholder="Adresse (départ)" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="devisEtageDep">Etage</label>
-                                        <input type="number" name="devisEtageDep" class="form-control" min="0" id="devisEtageDep" placeholder="Etage (départ)" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="devisAscenceurDep">Ascenceur</label>
-                                        <select class="form-control" name="devisAscenceurDep" id="devisAscenceurDep">
-                                            <option>Aucun</option>
-                                            <option>Ascenceur petit</option>
-                                            <option>Ascenceur moyen</option>
-                                            <option>Ascenceur grand</option>
-                                        </select>                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="panel panel-warning">
-                                <div class="panel-heading">
-                                    <h1 class="panel-title">Arrivée</h1>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="col-sm-12">
-                                        <label for="devisRueArr">Adresse</label>
-                                        <input type="text" name="devisAdresseDest" class="form-control" id="devisAdresseDest" placeholder="Adresse (arrivé)" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="devisEtageArr">Etage</label>
-                                        <input type="number" name="devisEtageArr" class="form-control"  min="0" id="devisEtageArr" placeholder="Etage (arrivé)" required>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label for="devisAscenceurArr">Ascenceur</label>
-                                        <select class="form-control" name="devisAscenceurArr" id="devisAscenceurArr">
-                                            <option>Aucun</option>
-                                            <option>Ascenceur petit</option>
-                                            <option>Ascenceur moyen</option>
-                                            <option>Ascenceur grand</option>
-                                        </select>                        
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h2>Informations Complementaires :</h2>
-                        <div class="panel panel-warning">
-                            <div class="panel-heading">
-                                <h1 class="panel-title">Commentaire</h1>
-                            </div>
-                            <div class="panel-body">
-                                <textarea id="devisComment" name="devisComment" class="form-control" rows="8" placeholder="Détaillez votre déménagement, plus vous donnerez des informations précises, plus le devis de votre demenagement sera précis"></textarea>                   
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <button type="submit" class="btn btn-warning btn-lg btn-block">Envoyez</button>
-                    </div>
-                </form>
-
-                <!--                <form role="form" action="sendMail.php">
-                                 Modal 
-                                
-                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Récapitulatif</h4>
-                                      </div>
-                                        <div class="modal-body">                            
-                                            <p><b>Nom :</b> <em id="recName">Blazo Nastov</em></p>
-                                            <input type="hidden" name="sendName" id="sendName"/>
-                                            
-                                            <p><b>Tel :</b> <em id="recTel">075 180 256</em></p>  
-                                            <input type="hidden" name="sendTel" id="sendTel"/>
-                                            
-                                            <p><b>E-mail :</b> <em id="recMail">Blazo.Nastov@gmail.com</em></p>
-                                            <input type="hidden" name="sendMail" id="sendMail"/>
-                                            
-                                            <p><b>Date déménagement :</b> <em id="recDate">12 Jul 2014</em></p>
-                                            <input type="hidden" name="sendDate" id="sendDate"/>
-                                            
-                                            <p><b>Adresse départ :</b> <em id="recAdrDep">10 rue Daru 34000 Montpellier</em></p>
-                                            <input type="hidden" name="sendAdrDep" id="sendAdrDep"/>
-                                            
-                                            <p><b>Etage :</b> <em id="recEtageDep">4</em></p>
-                                            <input type="hidden" name="sendEtageDep" id="sendEtageDep"/>
-                                            
-                                            <p><b>Ascenceur :</b> <em id="recAscenDep">Aucun</em></p>
-                                            <input type="hidden" name="sendAscDep" id="sendAscDep"/>
-                                            
-                                            <p><b>Adresse arrivé :</b> <em id="recAdrArr">10 rue Daru 34000 Montpellier</em></p>
-                                            <input type="hidden" name="sendAdrArr" id="sendAdrArr"/>
-                                            
-                                            <p><b>Etage :</b> <em id="recEtageArr">4</em></p>
-                                            <input type="hidden" name="sendEtageArr" id="sendEtageArr"/>
-                                            
-                                            <p><b>Ascenceur :</b> <em id="recAscenArr">Aucun</em></p>
-                                            <input type="hidden" name="sendAscArr" id="sendAscArr"/>
-                                            
-                                            <p><b>Volume totale :</b> <em id="recVolume">78 m3</em></p>
-                                            <input type="hidden" name="sendVolume" id="sendVolume"/>
-                                            
-                                            <p><b>Objects spéciaux :</b> <em id="recObjetsSpe">78 m3</em></p>
-                                            <input type="hidden" name="sendObjSpe" id="sendObjSpe"/>
-                                            
-                                            <p><b>Commentaires :</b> <em id="recComment">78 m3</em></p>
-                                            <input type="hidden" name="sendComment" id="sendComment"/>
-                                            
-                                        </div>  
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Envoyez</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                </form>-->
-                <!-- /.row -->
-
+          <div class="col-lg-12">
+            <h2>Informations Déménagement :</h2>
+            <div class="col-lg-6">                        
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h1 class="panel-title">Départ</h1>
+                </div>
+                <div class="panel-body">    
+                  <div class="col-sm-4">
+                    <label for="devisDate">Date</label>
+                    <input type="date" name="devisDate" class="form-control" id="devisDate" required>
+                  </div>
+                  <div class="col-sm-8">
+                    <label for="devisRueDep">Adresse</label>
+                    <input type="text" name="devisAdresseDep" class="form-control" id="devisAdresseDep" placeholder="Adresse (départ)" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="devisEtageDep">Etage</label>
+                    <input type="number" name="devisEtageDep" class="form-control" min="0" id="devisEtageDep" placeholder="Etage (départ)" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="devisAscenceurDep">Ascenceur</label>
+                    <select class="form-control" name="devisAscenceurDep" id="devisAscenceurDep">
+                      <option>Aucun</option>
+                      <option>Ascenceur petit</option>
+                      <option>Ascenceur moyen</option>
+                      <option>Ascenceur grand</option>
+                    </select>                        
+                  </div>
+                </div>
+              </div>
             </div>
 
+            <div class="col-lg-6">
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h1 class="panel-title">Arrivée</h1>
+                </div>
+                <div class="panel-body">
+                  <div class="col-sm-12">
+                    <label for="devisRueArr">Adresse</label>
+                    <input type="text" name="devisAdresseDest" class="form-control" id="devisAdresseDest" placeholder="Adresse (arrivé)" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="devisEtageArr">Etage</label>
+                    <input type="number" name="devisEtageArr" class="form-control"  min="0" id="devisEtageArr" placeholder="Etage (arrivé)" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="devisAscenceurArr">Ascenceur</label>
+                    <select class="form-control" name="devisAscenceurArr" id="devisAscenceurArr">
+                      <option>Aucun</option>
+                      <option>Ascenceur petit</option>
+                      <option>Ascenceur moyen</option>
+                      <option>Ascenceur grand</option>
+                    </select>                        
+                  </div>
+                </div>
 
-            <!-- /.container -->
+              </div>
+            </div>
+          </div>
 
-            <?php
-            include './menu/footer.php';
-            ?>
-            <!-- /.container -->
+          <div class="col-lg-6 col-lg-offset-3">
+            <h2>Informations Complementaires :</h2>
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h1 class="panel-title">Commentaire</h1>
+              </div>
+              <div class="panel-body">
+                <textarea id="devisComment" name="devisComment" class="form-control" rows="8" placeholder="Détaillez votre déménagement, plus vous donnerez des informations précises, plus le devis de votre demenagement sera précis"><?php
+                                    
+                  if (isset($_GET['alacarte'])) {
+                    $amego = " A la Charge d' Amego \n";
+                    $client = "A la Charge du Client \n";
+                    $deux = " A la Charge  d'Amego et le Client \n";
+                    $autre = " Autre \n";
 
-            <!-- JavaScript -->
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script src="./dist/js/bootstrap.min.js"></script>
-            <script src="./dist/js/holder.js"></script>
+                    concat($amego, $client,$deux, "Emballage  des articles  non  fragiles (Linge plier, livres, DVD...) ", "emarticle");
+                    concat($amego, $client,$deux, "Emballage de la  vaisselles  fragiles  ", "emvaisselles", 2);
+                    concat($amego, $client,$deux, "Mise en penderie des vêtements sur cintre  ", "penderie", 2);
+                    concat($amego, $client,$deux, "Emballage des objets fragiles ( cadre, miroir, tableau ...) ", "emobjfragile", 2);
+                    concat($amego, $client,$deux, "Protection et conditionnnement  du mobilier", "protcond", 2);
+                    concat($amego, $client,$deux, "Protection sous hausse des sommiers, matelas, canapés, fauteuils ...  ", "profaut", 2);
+                    concat($amego, $client,$deux, "Demontage et Remontage des  meubles imposant ( lit , dressing, living ...) ", "demontage", 2);
+                    concat($amego, $client,$deux, "Démarche pour autorisation de stationnement  ", "demautris", 2);
+                    concat($amego, $client,$deux, "Manutention, transport encamion capitonné  ", "transport", 2);
+                    
+                    
+                    if($_POST['needmontmeuble']=="on"){
+                      $autre = $autre .' - '."J'ai besoin d'un Monte Meuble \n";
+                    } else {
+                      $autre = $autre .' - '."Je n'ai pas besoin  d'un Monte Meuble \n";
+                    }
+                    
+                    $autre = $autre .' - Je veux ' .$_POST['nbrdem']."  déménageurs \n ";
+                    
+                    
+                    echo $client . "\n\n". $amego. "\n\n". $deux ."\n\n".$autre ;
+                  }
+                  ?></textarea>                   
+              </div>
+            </div>
+          </div>
 
-    </body>
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-warning btn-lg btn-block">Envoyez</button>
+          </div>
+        </form>
+
+        <!--                <form role="form" action="sendMail.php">
+                         Modal 
+                        
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">Récapitulatif</h4>
+                              </div>
+                                <div class="modal-body">                            
+                                    <p><b>Nom :</b> <em id="recName">Blazo Nastov</em></p>
+                                    <input type="hidden" name="sendName" id="sendName"/>
+                                    
+                                    <p><b>Tel :</b> <em id="recTel">075 180 256</em></p>  
+                                    <input type="hidden" name="sendTel" id="sendTel"/>
+                                    
+                                    <p><b>E-mail :</b> <em id="recMail">Blazo.Nastov@gmail.com</em></p>
+                                    <input type="hidden" name="sendMail" id="sendMail"/>
+                                    
+                                    <p><b>Date déménagement :</b> <em id="recDate">12 Jul 2014</em></p>
+                                    <input type="hidden" name="sendDate" id="sendDate"/>
+                                    
+                                    <p><b>Adresse départ :</b> <em id="recAdrDep">10 rue Daru 34000 Montpellier</em></p>
+                                    <input type="hidden" name="sendAdrDep" id="sendAdrDep"/>
+                                    
+                                    <p><b>Etage :</b> <em id="recEtageDep">4</em></p>
+                                    <input type="hidden" name="sendEtageDep" id="sendEtageDep"/>
+                                    
+                                    <p><b>Ascenceur :</b> <em id="recAscenDep">Aucun</em></p>
+                                    <input type="hidden" name="sendAscDep" id="sendAscDep"/>
+                                    
+                                    <p><b>Adresse arrivé :</b> <em id="recAdrArr">10 rue Daru 34000 Montpellier</em></p>
+                                    <input type="hidden" name="sendAdrArr" id="sendAdrArr"/>
+                                    
+                                    <p><b>Etage :</b> <em id="recEtageArr">4</em></p>
+                                    <input type="hidden" name="sendEtageArr" id="sendEtageArr"/>
+                                    
+                                    <p><b>Ascenceur :</b> <em id="recAscenArr">Aucun</em></p>
+                                    <input type="hidden" name="sendAscArr" id="sendAscArr"/>
+                                    
+                                    <p><b>Volume totale :</b> <em id="recVolume">78 m3</em></p>
+                                    <input type="hidden" name="sendVolume" id="sendVolume"/>
+                                    
+                                    <p><b>Objects spéciaux :</b> <em id="recObjetsSpe">78 m3</em></p>
+                                    <input type="hidden" name="sendObjSpe" id="sendObjSpe"/>
+                                    
+                                    <p><b>Commentaires :</b> <em id="recComment">78 m3</em></p>
+                                    <input type="hidden" name="sendComment" id="sendComment"/>
+                                    
+                                </div>  
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Envoyez</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </form>-->
+        <!-- /.row -->
+
+      </div>
+
+
+      <!-- /.container -->
+
+      <?php
+      include './menu/footer.php';
+      ?>
+      <!-- /.container -->
+
+      <!-- JavaScript -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="./dist/js/bootstrap.min.js"></script>
+      <script src="./dist/js/holder.js"></script>
+
+  </body>
 
 </html>

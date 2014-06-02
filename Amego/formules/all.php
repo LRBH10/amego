@@ -19,6 +19,7 @@
     <a class="btn btn-default"  href="./formules.php#formule_luxe"/> plus de détails </a>
   </div>
   
+  
 </div>
 
 <script type="text/javascript">

@@ -25,7 +25,7 @@ include_once './menu/navigation.php';
         <link href="./dist/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body itemscope itemtype="http://schema.org/QAPage">
 
         <?php
         include './menu/header.php';

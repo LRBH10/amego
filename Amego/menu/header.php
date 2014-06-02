@@ -8,7 +8,7 @@
 
 <link href="./dist/css/amego.css" rel="stylesheet">
 
-<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<header itemscope itemtype="http://schema.org/WPHeader" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,6 +39,7 @@
                         <li><a href="./formules.php#formule_eco">Formule économique</a></li>
                         <li><a href="./formules.php#formule_standard">Formule standard</a></li>
                         <li><a href="./formules.php#formule_luxe">Formule Complète</a></li>
+                        <li><a href="./alacarte.php">Déménagement à la Carte</a></li>
                         <li><a href="./formules.php#comparaisons">Comparaisons</a></li>
                     </ul>
                 </li>  
