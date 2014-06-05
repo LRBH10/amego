@@ -292,7 +292,7 @@ function concat(&$amego, &$client,&$deux, $what, $val, $default = 0) {
                                     
                   if (isset($_GET['alacarte'])) {
                     $amego = " A la Charge d' Amego \n";
-                    $client = "A la Charge du Client \n";
+                    $client = "A la Charge du Client \n - Les effets personnels \n";
                     $deux = " A la Charge  d'Amego et le Client \n";
                     $autre = " Autre \n";
 
@@ -307,6 +307,7 @@ function concat(&$amego, &$client,&$deux, $what, $val, $default = 0) {
                     concat($amego, $client,$deux, "Manutention, transport encamion capitonné  ", "transport", 2);
                     
                     
+                    
                     if($_POST['needmontmeuble']=="on"){
                       $autre = $autre .' - '."J'ai besoin d'un Monte Meuble \n";
                     } else {
@@ -316,7 +317,7 @@ function concat(&$amego, &$client,&$deux, $what, $val, $default = 0) {
                     $autre = $autre .' - Je veux ' .$_POST['nbrdem']."  déménageurs \n ";
                     
                     
-                    echo $client . "\n\n". $amego. "\n\n". $deux ."\n\n".$autre ;
+                    echo $client . "\n\n". $amego. /*"\n\n". $deux .*/"\n\n".$autre ;
                   }
                   ?></textarea>                   
               </div>

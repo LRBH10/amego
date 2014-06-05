@@ -19,10 +19,19 @@
     <a class="btn btn-default"  href="./formules.php#formule_luxe"/> plus de détails </a>
   </div>
   
+  <!--div class="col-md-4">
+    <div id="autres" ></div>
+    <a class="btn btn-default"  href="./formules.php#formule_luxe"/> plus de détails </a>
+  </div-->
+  
   
 </div>
 
 <script type="text/javascript">
+  
+  //var paper = Raphael("autres", 300, 300);
+  //var triangle = paper.path("M25,75L,160L160,00Z");
+  
   var paper = Raphael("vip", 300, 300);
 
   var pie = paper.piechart(150, 150, 100, [5, 95], {colors: [ "#a2bf2f","#2f69bf"], startFromFixedAngle: 90});

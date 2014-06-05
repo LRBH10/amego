@@ -38,14 +38,14 @@ function printter($param, $id, $default = 0) {
   echo '<div class = "form-group text-center">';
   echo '<h4 id = "' . $id . '" class = "' . $class . '">' . $param . '</h4>';
 
-  echo '<div class = "col-md-3 well">';
+  echo '<div class = "col-md-6 well">';
   echo '<input type = "radio" name = "' . $id . '" value = "1" onchange="reconf(\'#' . $id . '\', 1);" ' . $var1 . ' > <strong>  <span class = "badge " >Client </span> </strong> <br>';
   echo '</div>';
-  echo '<div class = "col-md-6 well">';
-  echo '<input type = "radio" name = "' . $id . '" value = "2" onchange="reconf(\'#' . $id . '\', 2);"  ' . $var2 . '> <strong><span class = "badge " > Client </span> et
-  <span class = "badge " > Amego</span></strong> <br>';
-  echo '</div>';
-  echo '<div class = " col-md-3 well">';
+  //echo '<div class = "col-md-6 well">';
+  //echo '<input type = "radio" name = "' . $id . '" value = "2" onchange="reconf(\'#' . $id . '\', 2);"  ' . $var2 . '> <strong><span class = "badge " > Client </span> et
+  //<span class = "badge " > Amego</span></strong> <br>';
+  //echo '</div>';
+  echo '<div class = " col-md-6 well">';
   echo '<input type = "radio" name = "' . $id . '" value = "3" onchange="reconf(\'#' . $id . '\', 3);" ' . $var3 . '> <strong>  <span class="badge " >Amego</span> </strong>  <br>
             </div>
           </div>

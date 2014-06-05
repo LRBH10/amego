@@ -27,7 +27,7 @@ include_once './menu/navigation.php';
     </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/diff/slate.css" rel="stylesheet">
 
 
     <!-- Add custom CSS here -->

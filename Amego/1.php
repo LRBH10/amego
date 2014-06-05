@@ -27,7 +27,7 @@ include_once './menu/navigation.php';
     </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/diff/amelia.css" rel="stylesheet">
 
 
     <!-- Add custom CSS here -->
@@ -53,7 +53,7 @@ include_once './menu/navigation.php';
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
